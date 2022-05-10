@@ -42,8 +42,8 @@ const Navbar = () => {
 			<ul
 				className={`${
 					!navbar
-						? "hidden"
-						: "absolute top-0 left-0 bg-[#0a192f] flex flex-col justify-center items-center h-screen w-screen "
+						? "md:hidden absolute top-0 left-0 bg-[#0a192f] flex flex-col justify-center items-center h-screen w-screen ml-[-100%] duration-500"
+						: "absolute top-0 left-0 bg-[#0a192f] flex flex-col justify-center items-center h-screen w-screen duration-500"
 				}`}
 			>
 				<li className='pb-3 text-3xl'>Home</li>
