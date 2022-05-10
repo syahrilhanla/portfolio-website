@@ -1,7 +1,8 @@
 import Head from "next/head";
+import Home from "../components/Home";
 import Navbar from "../components/Navbar";
 
-export default function Home() {
+export default function Startup() {
 	return (
 		<div>
 			<Head>
@@ -11,8 +12,7 @@ export default function Home() {
 			</Head>
 
 			<Navbar />
-
-			<h1 className='text-3xl font-light bg-red-400'>This is my portfolio</h1>
+			<Home />
 		</div>
 	);
 }
