@@ -1,9 +1,8 @@
 import { useState } from "react";
-import { FaBars, FaTimes, FaLinkedin, FaGithub } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
-import { BsPersonLinesFill } from "react-icons/bs";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 import Image from "next/image";
+import SocialIcons from "./SocialIcons";
 const Navbar = () => {
 	const [navbar, setNavbar] = useState(false);
 
@@ -44,7 +43,7 @@ const Navbar = () => {
 				className={`${
 					!navbar
 						? "hidden"
-						: "absolute top-0 left-0 bg-[#0a192f] flex flex-col justify-center items-center h-screen w-screen"
+						: "absolute top-0 left-0 bg-[#0a192f] flex flex-col justify-center items-center h-screen w-screen "
 				}`}
 			>
 				<li className='pb-3 text-3xl'>Home</li>
@@ -54,43 +53,7 @@ const Navbar = () => {
 				<li className='pb-3 text-3xl'>Contact</li>
 			</ul>
 
-			{/* social icons */}
-			<div className='flex fixed flex-col top-[30%] left-2'>
-				<ul>
-					<li className='h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300'>
-						<a
-							href='/'
-							className='flex justify-between items-center w-full text-gray-300'
-						>
-							Linkedin <FaLinkedin size={30} />
-						</a>
-					</li>
-					<li className='h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300'>
-						<a
-							href='/'
-							className='flex justify-between items-center w-full text-gray-300'
-						>
-							Github <FaGithub size={30} />
-						</a>
-					</li>
-					<li className='h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300'>
-						<a
-							href='/'
-							className='flex justify-between items-center w-full text-gray-300'
-						>
-							Email <HiOutlineMail size={30} />
-						</a>
-					</li>
-					<li className='h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300'>
-						<a
-							href='/'
-							className='flex justify-between items-center w-full text-gray-300'
-						>
-							Contact <BsPersonLinesFill size={30} />
-						</a>
-					</li>
-				</ul>
-			</div>
+			<SocialIcons navbar={navbar} />
 		</div>
 	);
 };
