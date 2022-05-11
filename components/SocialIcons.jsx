@@ -8,7 +8,8 @@ const SocialIcons = ({ navbar }) => {
 			<ul>
 				<li className='h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300'>
 					<a
-						href='/'
+						target='_blank'
+						href='https://www.linkedin.com/in/syahril-hanla-45387220a/'
 						className='flex justify-between items-center w-full text-gray-300'
 					>
 						Linkedin <FaLinkedin size={30} />
@@ -16,7 +17,8 @@ const SocialIcons = ({ navbar }) => {
 				</li>
 				<li className='h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300'>
 					<a
-						href='/'
+						target='_blank'
+						href='https://github.com/syahrilhanla'
 						className='flex justify-between items-center w-full text-gray-300'
 					>
 						Github <FaGithub size={30} />
@@ -30,7 +32,7 @@ const SocialIcons = ({ navbar }) => {
 						Email <HiOutlineMail size={30} />
 					</a>
 				</li>
-				<li className='h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300 hover:bg-slate-700'>
+				<li className='h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300'>
 					<a
 						href='/'
 						className='flex justify-between items-center w-full text-gray-300'

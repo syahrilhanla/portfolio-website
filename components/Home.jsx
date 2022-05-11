@@ -1,8 +1,12 @@
-import { HiArrowNarrowRight } from "react-icons/hi";
+import Introduction from "./Introduction";
 
 const Home = () => {
 	return (
-		<div className='bg-gradient-to-tr from-[#0d2b58] ... h-screen w-screen'></div>
+		<div className='bg-[#0c2852] h-screen w-screen flex flex-col justify-center items-center'>
+			<div className='w-[60%] md:w-[50%] '>
+				<Introduction />
+			</div>
+		</div>
 	);
 };
 
