@@ -2,7 +2,7 @@ import { HiArrowNarrowRight } from "react-icons/hi";
 
 const Introduction = () => {
 	return (
-		<div className='flex flex-col'>
+		<div className='flex flex-col h-screen w-[80%] md:w-[50%] justify-center'>
 			<p className='text-pink-600 font-medium text-lg'>Hi, my name is</p>
 			<h1 className='text-white text-5xl font-bold mt-[-10px]'>
 				Syahril Hanla
