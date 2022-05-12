@@ -42,7 +42,7 @@ const Navbar = () => {
 			<ul
 				className={`${
 					!navbar
-						? "md:hidden absolute top-0 left-0 bg-[#0a192f] flex flex-col justify-center items-center h-screen w-screen ml-[-100%] duration-500"
+						? "md:hidden absolute top-0 left-0 bg-[#0a192f] flex flex-col justify-center items-center h-screen w-screen ml-[-110%] duration-500"
 						: "absolute top-0 left-0 bg-[#0a192f] flex flex-col justify-center items-center h-screen w-screen duration-500"
 				}`}
 			>
