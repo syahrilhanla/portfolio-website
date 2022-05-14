@@ -8,7 +8,7 @@ const About = () => {
 					</h1>
 				</span>
 				<div></div>
-				<h2 className='text-4xl font-normal md:text-right'>
+				<h2 className='text-4xl font-semibold md:text-right'>
 					Hi. Im Syahril, nice to meet you. Please take a look around.
 				</h2>
 				<p className='font-light mt-4 md:mt-0'>
