@@ -7,7 +7,7 @@ const Navbar = () => {
 	const [navbar, setNavbar] = useState(false);
 
 	return (
-		<div className='fixed h-[78px] w-full flex justify-between items-center px-4 bg-[#0a192f] text-gray-300'>
+		<div className='fixed h-[78px] w-full flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-10'>
 			<div className='ml-4'>
 				<Image
 					src={"/logo.png"}
