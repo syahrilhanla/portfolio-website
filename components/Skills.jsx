@@ -4,11 +4,11 @@ const Skills = () => {
 	return (
 		<div
 			name='skills'
-			className='bg-[#0c2852] h-screen text-gray-300 flex flex-col justify-center items-center text-center'
+			className='bg-[#0c2852] min-h-screen text-gray-300 flex flex-col justify-center items-center text-center'
 		>
 			<div className='flex flex-col items-center w-[80%] sm:-w-full'>
 				<h1 className='text-4xl w-min font-medium border-b-4 border-pink-600 py-1'>
-					Experience
+					Skills
 				</h1>
 				<p className='text-xl font-light py-3'>
 					// These are the technologies I've worked with
