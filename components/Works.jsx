@@ -3,28 +3,22 @@ import Link from "next/link";
 const Works = () => {
 	const workImages = [
 		{
-			imgURL: "workImg.jpeg",
-			title: "Title 1",
+			imgURL: "shopping-cart.png",
+			title: "Redux Shopping Cart",
+			repoAddress: "https://github.com/syahrilhanla/shopping-cart",
+			projectAddress: "/",
 		},
 		{
-			imgURL: "realestate.jpg",
-			title: "Title 2",
+			imgURL: "ia-statistics.png",
+			title: "I/A Statistics",
+			repoAddress: "https://github.com/syahrilhanla/proyek-skripsi",
+			projectAddress: "https://ia-statistics.vercel.app/",
 		},
 		{
-			imgURL: "workImg.jpeg",
-			title: "Title 3",
-		},
-		{
-			imgURL: "realestate.jpg",
-			title: "Title 4",
-		},
-		{
-			imgURL: "workImg.jpeg",
-			title: "Title 5",
-		},
-		{
-			imgURL: "realestate.jpg",
-			title: "Title 6",
+			imgURL: "book-app.png",
+			title: "My Book List",
+			repoAddress: "https://github.com/syahrilhanla/App-Buku",
+			projectAddress: "/",
 		},
 	];
 
@@ -38,7 +32,7 @@ const Works = () => {
 					Works
 				</h1>
 				<p className="text-xl font-light py-3 mb-6 text-left">
-					These are the technologies I've worked with
+					# These are some project I've been working with
 				</p>
 
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-3 ">
@@ -53,15 +47,15 @@ const Works = () => {
 									{image.title}
 								</span>
 								<div className="pt-8 text-center">
-									<Link href="/">
-										<a>
+									<Link href={image.projectAddress}>
+										<a target={"_blank"}>
 											<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
 												Demo
 											</button>
 										</a>
 									</Link>
-									<Link href="/">
-										<a>
+									<Link href={image.repoAddress}>
+										<a target={"_blank"}>
 											<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
 												Code
 											</button>
