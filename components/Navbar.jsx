@@ -10,10 +10,10 @@ const Navbar = () => {
 		<div className="fixed h-[78px] w-full flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-10">
 			<div className="ml-4">
 				<Image
-					src={"/logo.png"}
+					src={"/syahrilLogo.png"}
 					quality={75}
-					width={48}
-					height={48}
+					width={86}
+					height={86}
 					alt={"logo"}
 				/>
 			</div>
