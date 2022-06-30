@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const Works = () => {
 	const workImages = [
 		{
@@ -51,16 +53,20 @@ const Works = () => {
 									{image.title}
 								</span>
 								<div className='pt-8 text-center'>
-									<a href='/'>
-										<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-											Demo
-										</button>
-									</a>
-									<a href='/'>
-										<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
-											Code
-										</button>
-									</a>
+									<Link href='/'>
+										<a>
+											<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+												Demo
+											</button>
+										</a>
+									</Link>
+									<Link href='/'>
+										<a>
+											<button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>
+												Code
+											</button>
+										</a>
+									</Link>
 								</div>
 							</div>
 						</div>
