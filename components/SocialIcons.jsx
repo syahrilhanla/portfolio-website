@@ -11,36 +11,36 @@ const SocialIcons = ({ navbar }) => {
 			}
 		>
 			<ul>
-				<li className='h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300'>
-					<Link href='https://www.linkedin.com/in/syahril-hanla-45387220a/'>
+				<li className="h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300">
+					<Link href="https://www.linkedin.com/in/syahril-hanla-45387220a/">
 						<a
-							target='_blank'
-							className='flex justify-between items-center w-full text-gray-300'
+							target="_blank"
+							className="flex justify-between items-center w-full text-gray-300"
 						>
 							Linkedin <FaLinkedin size={30} />
 						</a>
 					</Link>
 				</li>
-				<li className='h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300'>
-					<Link href='https://github.com/syahrilhanla'>
+				<li className="h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300">
+					<Link href="https://github.com/syahrilhanla">
 						<a
-							target='_blank'
-							className='flex justify-between items-center w-full text-gray-300'
+							target="_blank"
+							className="flex justify-between items-center w-full text-gray-300"
 						>
 							Github <FaGithub size={30} />
 						</a>
 					</Link>
 				</li>
-				<li className='h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300'>
-					<Link href='/'>
-						<a className='flex justify-between items-center w-full text-gray-300'>
+				<li className="h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300">
+					<Link href="/">
+						<a className="flex justify-between items-center w-full text-gray-300">
 							Email <HiOutlineMail size={30} />
 						</a>
 					</Link>
 				</li>
-				<li className='h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300'>
-					<Link href='/'>
-						<a className='flex justify-between items-center w-full text-gray-300'>
+				<li className="h-[60px] w-[150px] flex justify-between items-center ml-[-90px] hover:ml-[-5px] duration-300">
+					<Link href="/">
+						<a className="flex justify-between items-center w-full text-gray-300">
 							Contact <BsPersonLinesFill size={30} />
 						</a>
 					</Link>
