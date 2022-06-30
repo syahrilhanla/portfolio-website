@@ -25,7 +25,7 @@ const Works = () => {
 	return (
 		<div
 			name="skills"
-			className="bg-[#0c2852] min-h-screen text-gray-300 flex flex-col justify-center items-center text-center px-[8rem]"
+			className="bg-[#0c2852] min-h-screen text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem]"
 		>
 			<div className="flex justify-start flex-col sm:mt-3 mt-[6rem]">
 				<h1 className="text-4xl w-min font-medium border-b-4 border-pink-600 py-1">
@@ -39,7 +39,7 @@ const Works = () => {
 					{workImages.map((image) => (
 						<div
 							style={{ backgroundImage: `url(${image.imgURL})` }}
-							className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div w-[16rem]"
+							className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div max-w-[16rem]"
 							key={image.title}
 						>
 							<div className="opacity-0 group-hover:opacity-100">
