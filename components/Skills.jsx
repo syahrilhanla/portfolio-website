@@ -4,9 +4,9 @@ const Skills = () => {
 	return (
 		<div
 			name="skills"
-			className="bg-[#0c2852] min-h-screen text-gray-300 flex flex-col justify-center items-center text-center"
+			className="bg-[#0c2852] min-h-screen text-gray-300 flex flex-col justify-center items-center text-center pb-7 md:pb-0 md:py-0"
 		>
-			<div className="flex flex-col items-center w-[80%] sm:-w-full">
+			<div className="flex flex-col items-center w-[80%] sm:-w-full mt-7">
 				<h1 className="text-4xl w-min font-medium border-b-4 border-pink-600 py-1">
 					Skills
 				</h1>
