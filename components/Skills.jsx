@@ -11,7 +11,7 @@ const Skills = () => {
 					Skills
 				</h1>
 				<p className='text-xl font-light py-3'>
-					// These are the technologies I've worked with
+					# These are the technologies I've worked with
 				</p>
 			</div>
 			<div className='grid grid-cols-2 sm:grid-cols-4 gap-3'>
