@@ -8,11 +8,11 @@ const Introduction = () => {
 				Syahril Hanla
 			</h1>
 			<h1 className="text-slate-500 text-5xl font-bold mb-3">
-				I'm a Full Stack Developer.
+				Im a Full Stack Developer.
 			</h1>
 			<p className="text-slate-400 text-sm">
-				I'm a full-stack developer specializing in building (and occasionally
-				designing) exceptional digital experiences. Currently, I'm focused on
+				Im a full-stack developer specializing in building (and occasionally
+				designing) exceptional digital experiences. Currently, Im focused on
 				building responsive full-stack web applications.
 			</p>
 

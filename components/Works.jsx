@@ -38,7 +38,7 @@ const Works = () => {
 					Works
 				</h1>
 				<p className="text-xl font-light py-3 mb-6 text-left">
-					// These are the technologies I've worked with
+					These are the technologies I've worked with
 				</p>
 
 				<div className="grid grid-cols-1 md:grid-cols-3 gap-3 ">
