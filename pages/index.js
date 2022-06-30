@@ -10,8 +10,8 @@ export default function Startup() {
 		<div>
 			<Head>
 				<title>Syahril Hanla</title>
-				<meta name='description' content='Portfolio Website by Syahril Hanla' />
-				<link rel='icon' href='/favicon.ico' />
+				<meta name="description" content="Portfolio Website by Syahril Hanla" />
+				<link rel="icon" href="/syahrilLogo-icon.png" />
 			</Head>
 			<Navbar />
 			<Home />
