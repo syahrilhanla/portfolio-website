@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Link } from "react-scroll";
 
 import Image from "next/image";
 import SocialIcons from "./SocialIcons";
@@ -20,11 +21,31 @@ const Navbar = () => {
 
 			{/* Menu */}
 			<ul className="hidden md:flex">
-				<li>Home</li>
-				<li>About</li>
-				<li>Experience</li>
-				<li>Works</li>
-				<li>Contact</li>
+				<li>
+					<Link to="home" smooth={true} duration={500}>
+						Home
+					</Link>
+				</li>
+				<li>
+					<Link to="about" smooth={true} duration={500}>
+						About
+					</Link>
+				</li>
+				<li>
+					<Link to="skills" smooth={true} duration={500}>
+						Skills
+					</Link>
+				</li>
+				<li>
+					<Link to="works" smooth={true} duration={500}>
+						Works
+					</Link>
+				</li>
+				<li>
+					<Link to="contact" smooth={true} duration={500}>
+						Contact
+					</Link>
+				</li>
 			</ul>
 
 			{/* Hamburger */}

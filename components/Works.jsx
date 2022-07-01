@@ -24,7 +24,7 @@ const Works = () => {
 
 	return (
 		<div
-			name="skills"
+			name="works"
 			className="bg-[#0c2852] min-h-screen text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem] pb-7"
 		>
 			<div className="flex justify-start flex-col sm:mt-3 mt-[6rem]">
