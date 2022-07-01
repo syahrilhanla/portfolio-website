@@ -6,7 +6,7 @@ const Works = () => {
 			imgURL: "shopping-cart.png",
 			title: "Redux Shopping Cart",
 			repoAddress: "https://github.com/syahrilhanla/shopping-cart",
-			projectAddress: "/",
+			projectAddress: "https://syahrilhanla.github.io/shopping-cart/",
 		},
 		{
 			imgURL: "ia-statistics.png",
