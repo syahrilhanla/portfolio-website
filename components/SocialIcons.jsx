@@ -2,6 +2,7 @@ import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
+import { Link as Scroll } from "react-scroll";
 
 const SocialIcons = ({ navbar }) => {
 	return (
@@ -41,20 +42,18 @@ const SocialIcons = ({ navbar }) => {
 						</a>
 					</Link>
 				</li>
-				<li className="h-[60px] w-[150px] flex justify-between items-center ml-[-100px] hover:ml-[-5px] duration-300">
-					<Link href="/">
-						<a className="flex justify-between items-center w-full text-gray-300">
-							Email <HiOutlineMail size={30} />
-						</a>
-					</Link>
-				</li>
-				<li className="h-[60px] w-[150px] flex justify-between items-center ml-[-100px] hover:ml-[-5px] duration-300">
-					<Link href="/">
-						<a className="flex justify-between items-center w-full text-gray-300">
-							Contact <BsPersonLinesFill size={30} />
-						</a>
-					</Link>
-				</li>
+				<Scroll to="contact" smooth={true} duration={500}>
+					<li className="h-[60px] w-[150px] flex justify-between items-center ml-[-100px] hover:ml-[-5px] duration-300">
+						<Link href="/" target={"_blank"}>
+							<a
+								target="_blank"
+								className="flex justify-between items-center w-full text-gray-300"
+							>
+								Contact <BsPersonLinesFill size={30} />
+							</a>
+						</Link>
+					</li>
+				</Scroll>
 			</ul>
 		</div>
 	);
