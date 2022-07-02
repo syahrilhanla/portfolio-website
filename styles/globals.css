@@ -18,10 +18,11 @@
 	height: 250px;
 }
 
-.content-div:hover {
+.backgroundImage:hover {
 	background-image: linear-gradient(
 		to right,
-		rgba(112, 157, 255, 0.6),
-		hsla(242, 74%, 61%, 0.6)
+		rgba(107, 107, 107, 0.322),
+		hsla(0, 0%, 41%, 0.24)
 	) !important;
+	opacity: 0.5;
 }
