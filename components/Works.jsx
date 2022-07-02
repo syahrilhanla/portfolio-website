@@ -15,9 +15,9 @@ const Works = () => {
 			projectAddress: "https://ia-statistics.vercel.app/",
 		},
 		{
-			imgURL: "book-app.png",
-			title: "My Book List",
-			repoAddress: "https://github.com/syahrilhanla/App-Buku",
+			imgURL: "laragigs.png",
+			title: "Laragigs",
+			repoAddress: "https://github.com/syahrilhanla/learn-laravel",
 			projectAddress: "/",
 		},
 	];
@@ -39,24 +39,28 @@ const Works = () => {
 					{workImages.map((image) => (
 						<div
 							style={{ backgroundImage: `url(${image.imgURL})` }}
-							className="shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div max-w-[16rem]"
+							className="relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto max-w-[16rem] bg-no-repeat bg-center bg-cover h-[250px] z-0"
 							key={image.title}
 						>
-							<div className="opacity-0 group-hover:opacity-100">
-								<span className="text-2xl font-bold text-white tracking-wider sm:p-4">
+							<div
+								className=" absolute top-0 left-0 bg-gray-900 bg-no-repeat bg-center bg-cover 
+								h-full w-full opacity-0 group-hover:opacity-70  duration-300"
+							/>
+							<div className="opacity-0 group-hover:opacity-100 group-hover:z-50 ">
+								<span className="text-3xl font-light text-white tracking-wider sm:p-4">
 									{image.title}
 								</span>
 								<div className="pt-8 text-center">
 									<Link href={image.projectAddress}>
 										<a target={"_blank"}>
-											<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+											<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 text-xl font-normal hover:text-pink-600 duration-300">
 												Demo
 											</button>
 										</a>
 									</Link>
 									<Link href={image.repoAddress}>
 										<a target={"_blank"}>
-											<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
+											<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 text-xl font-normal hover:text-pink-600 duration-300">
 												Code
 											</button>
 										</a>

@@ -4,7 +4,7 @@ import { Link } from "react-scroll";
 const Introduction = () => {
 	return (
 		<div className="flex flex-col min-h-screen w-[80%] md:w-[70%] justify-center">
-			<p className="text-pink-600 font-medium text-lg md:mt-0 mt-8 mb-2">
+			<p className="text-pink-600 font-medium text-lg md:mt-0 mt-24 mb-2">
 				Hi, my name is
 			</p>
 			<h1 className="text-white text-5xl font-bold mt-[-10px]">
