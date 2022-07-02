@@ -14,22 +14,26 @@ const Skills = () => {
 					# These are the technologies I've worked with
 				</p>
 			</div>
-			<div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
-				<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-					<Image src={"/html.png"} width={72} height={72} />
-					<p className="font-light">HTML</p>
-				</div>
-				<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-					<Image src={"/css.png"} width={72} height={72} />
-					<p className="font-light">CSS</p>
-				</div>
+			<div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
 				<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 					<Image src={"/javascript.png"} width={72} height={72} />
-					<p className="font-light">JavaScript</p>
+					<p className="font-light">JavaScript (ES6)</p>
+				</div>
+				<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<Image src={"/typescript.svg"} width={72} height={72} />
+					<p className="font-light">TypeScript</p>
+				</div>
+				<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<Image src={"/laravel.svg"} width={72} height={72} />
+					<p className="font-light">Laravel</p>
 				</div>
 				<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 					<Image src={"/react.png"} width={72} height={72} />
 					<p className="font-light">React</p>
+				</div>
+				<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<Image src={"/nextJS.svg"} width={72} height={72} />
+					<p className="font-light">Next.js </p>
 				</div>
 				<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 					<Image src={"/node.png"} width={72} height={72} />
@@ -37,7 +41,7 @@ const Skills = () => {
 				</div>
 				<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 					<Image src={"/mongo.png"} width={72} height={72} />
-					<p className="font-light">Mongo</p>
+					<p className="font-light">MongoDB</p>
 				</div>
 				<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 					<Image src={"/tailwind.png"} width={72} height={72} />
@@ -46,6 +50,10 @@ const Skills = () => {
 				<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 					<Image src={"/firebase.png"} width={72} height={72} />
 					<p className="font-light">Firebase</p>
+				</div>
+				<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+					<Image src={"/git.svg"} width={72} height={72} />
+					<p className="font-light">Git</p>
 				</div>
 			</div>
 		</div>
