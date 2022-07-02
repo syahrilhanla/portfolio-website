@@ -2,12 +2,12 @@ const Contact = () => {
 	return (
 		<div
 			name="contact"
-			className="bg-[#0c2852] min-h-screen flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem] pb-7"
+			className="bg-[#0c2852] min-h-screen flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem]"
 		>
 			<form
 				method="POST"
 				action="https://getform.io/f/f4b8a254-2df3-4de4-b96e-d5df8773d5f4"
-				className="flex flex-col max-w-[600px] w-full py-8 text-left font-light"
+				className="flex flex-col max-w-[600px] w-full py-4 text-left font-light"
 				target="_blank"
 			>
 				<div className="pb-8">
@@ -37,7 +37,11 @@ const Contact = () => {
 					rows="10"
 					placeholder="Message"
 				></textarea>
-				<button className="text-white border-2 hover:bg-pink-600 hover:border-pink-600 px-4 py-3 my-8 mx-auto flex items-center rounded-md duration-150">
+				<button
+					className="text-white border-2 hover:bg-pink-600
+				 hover:border-pink-600 px-4 py-3 my-4 mx-auto
+				  flex items-center rounded-md duration-150"
+				>
 					Let's Collaborate
 				</button>
 			</form>
