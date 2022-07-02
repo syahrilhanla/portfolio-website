@@ -15,9 +15,9 @@ const Works = () => {
 			projectAddress: "https://ia-statistics.vercel.app/",
 		},
 		{
-			imgURL: "book-app.png",
-			title: "My Book List",
-			repoAddress: "https://github.com/syahrilhanla/App-Buku",
+			imgURL: "laragigs.png",
+			title: "Laragigs",
+			repoAddress: "https://github.com/syahrilhanla/learn-laravel",
 			projectAddress: "/",
 		},
 	];
@@ -42,7 +42,10 @@ const Works = () => {
 							className="relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto max-w-[16rem] bg-no-repeat bg-center bg-cover h-[250px] z-0"
 							key={image.title}
 						>
-							<div className=" absolute top-0 left-0 bg-gray-900 bg-no-repeat bg-center bg-cover h-[250px] w-full h-full opacity-0 group-hover:opacity-60  duration-300" />
+							<div
+								className=" absolute top-0 left-0 bg-gray-900 bg-no-repeat bg-center bg-cover 
+								h-full w-full opacity-0 group-hover:opacity-70  duration-300"
+							/>
 							<div className="opacity-0 group-hover:opacity-100 group-hover:z-50 ">
 								<span className="text-3xl font-light text-white tracking-wider sm:p-4">
 									{image.title}
