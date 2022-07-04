@@ -1,5 +1,6 @@
 import Head from "next/head";
 import About from "../components/About";
+import CallMe from "../components/CallMe";
 import Contact from "../components/Contact";
 import Home from "../components/Home";
 import Navbar from "../components/Navbar";
@@ -20,6 +21,7 @@ export default function Startup() {
 			<Skills />
 			<Works />
 			<Contact />
+			<CallMe />
 		</div>
 	);
 }
