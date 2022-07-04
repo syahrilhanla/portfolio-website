@@ -1,10 +1,11 @@
 const About = () => {
 	return (
 		<div
-			className="min-h-screen text-slate-300 bg-[#0c2852] flex justify-center items-center md:px-10 px-3 md:pb-0 pb-5"
+			className="min-h-screen text-slate-300 bg-[#0c2852]
+			 flex justify-center items-center md:px-10 px-3 md:pb-0 pb-5"
 			name="about"
 		>
-			<div className="md:grid grid-cols-2 gap-x-8 w-[70%] mt-10 md:mt-0">
+			<div className="md:grid grid-cols-2 gap-x-8 w-[80%] mt-10 md:mt-0">
 				<span className="md:flex justify-end">
 					<h1 className="w-min text-3xl text-white font-medium border-b-2 border-pink-600">
 						About
