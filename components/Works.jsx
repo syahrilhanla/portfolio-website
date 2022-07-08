@@ -15,11 +15,18 @@ const Works = () => {
 			projectAddress: "https://ia-statistics.vercel.app/",
 		},
 		{
-			imgURL: "laragigs.png",
-			title: "Laragigs",
-			repoAddress: "https://github.com/syahrilhanla/learn-laravel",
-			projectAddress: "/",
+			imgURL: "cyberani.png",
+			title: "CyberAni",
+			repoAddress: "https://github.com/syahrilhanla/cyberani",
+			projectAddress:
+				"https://anime-app-git-dev-branch-syahrilhanla.vercel.app/",
 		},
+		// {
+		// 	imgURL: "laragigs.png",
+		// 	title: "Laragigs",
+		// 	repoAddress: "https://github.com/syahrilhanla/learn-laravel",
+		// 	projectAddress: "/",
+		// },
 	];
 
 	return (
