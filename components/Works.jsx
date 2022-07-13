@@ -9,17 +9,16 @@ const Works = () => {
 			projectAddress: "https://syahrilhanla.github.io/shopping-cart/",
 		},
 		{
+			imgURL: "cyberani.png",
+			title: "CyberAni",
+			repoAddress: "https://github.com/syahrilhanla/cyberani",
+			projectAddress: "https://cyberani.vercel.app/",
+		},
+		{
 			imgURL: "ia-statistics.png",
 			title: "I/A Statistics",
 			repoAddress: "https://github.com/syahrilhanla/proyek-skripsi",
 			projectAddress: "https://ia-statistics.vercel.app/",
-		},
-		{
-			imgURL: "cyberani.png",
-			title: "CyberAni",
-			repoAddress: "https://github.com/syahrilhanla/cyberani",
-			projectAddress:
-				"https://anime-app-git-dev-branch-syahrilhanla.vercel.app/",
 		},
 		// {
 		// 	imgURL: "laragigs.png",
