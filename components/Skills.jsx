@@ -10,10 +10,10 @@ const Skills = () => {
 				<h1 className="text-4xl w-min font-medium border-b-4 border-pink-600 py-1">
 					Skills
 				</h1>
-				<p className="text-xl font-light py-3">
+				<p className="text-xl text-left font-light pt-3 pb-5">
 					# These are the technologies I've worked with
 				</p>
-				<div className="grid grid-cols-2 sm:grid-cols-5 gap-3">
+				<div className="grid grid-cols-3 sm:grid-cols-4 gap-3">
 					<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<Image src={"/javascript.png"} width={72} height={72} />
 						<p className="font-light">JavaScript (ES6)</p>
@@ -35,6 +35,10 @@ const Skills = () => {
 						<p className="font-light">Next.js </p>
 					</div>
 					<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+						<Image src={"/redux.svg"} width={72} height={72} />
+						<p className="font-light">Redux</p>
+					</div>
+					<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<Image src={"/node.png"} width={72} height={72} />
 						<p className="font-light">Node.js</p>
 					</div>
@@ -53,6 +57,10 @@ const Skills = () => {
 					<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
 						<Image src={"/git.svg"} width={72} height={72} />
 						<p className="font-light">Git</p>
+					</div>
+					<div className="px-4 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
+						<Image src={"/figma.svg"} width={72} height={72} />
+						<p className="font-light">Figma</p>
 					</div>
 				</div>
 			</div>
