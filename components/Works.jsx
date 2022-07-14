@@ -78,7 +78,12 @@ const Works = () => {
 		// },
 	];
 
-	const DetailCard = ({ techStack, description }) => (
+	const DetailCard = ({
+		techStack,
+		description,
+		repoAddress,
+		projectAddress,
+	}) => (
 		<div
 			className="bg-slate-800 text-slate-200 md:h-fit md:w-full md:bottom-[-25%]
 			 md:absolute w-[85vw]
@@ -97,6 +102,30 @@ const Works = () => {
 			<div className="px-3 md:group-hover:visible md:invisible md:group-hover:block">
 				<h4 className="font-normal text-xl">Description: </h4>
 				<p className="text-base font-light">{description}</p>
+			</div>
+			<div className="pt-2 text-center md:hidden md:group-hover:block block">
+				<Link href={projectAddress}>
+					<a target={"_blank"}>
+						<button
+							className="text-center rounded-lg px-4 py-3 
+						m-2 bg-white text-gray-700 text-xl font-normal
+						 hover:text-pink-600 duration-300"
+						>
+							Demo
+						</button>
+					</a>
+				</Link>
+				<Link href={repoAddress}>
+					<a target={"_blank"}>
+						<button
+							className="text-center rounded-lg px-4 py-3 m-2
+						 bg-white text-gray-700 text-xl font-normal
+						  hover:text-pink-600 duration-300"
+						>
+							Code
+						</button>
+					</a>
+				</Link>
 			</div>
 		</div>
 	);
@@ -119,13 +148,16 @@ const Works = () => {
 						<div
 							className="shadow-lg shadow-[#040c16] group container
 							 rounded-md mx-auto md:relative flex items-end md:overflow-hidden
-							 md:w-[400px] w-[100vw] bg-no-repeat bg-center bg-cover min-h-[480px] m-4"
+							 md:w-[400px] w-[100vw] bg-no-repeat bg-center 
+							 bg-cover md:min-h-[480px] min-h-[100vh] m-4"
 							key={data.title}
 							style={{ backgroundImage: `url(${data.imgURL})` }}
 						>
 							<DetailCard
 								description={data.description}
 								techStack={data.techStack}
+								repoAddress={data.repoAddress}
+								projectAddress={data.projectAddress}
 							/>
 						</div>
 					))}
