@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const Works = () => {
-	const workImages = [
+	const workData = [
 		{
 			imgURL: "cyberani.png",
 			title: "CyberAni",
@@ -21,7 +21,6 @@ const Works = () => {
 				},
 				{
 					img: "/tailwind.png",
-
 					name: "TailwindCSS",
 				},
 			],
@@ -44,7 +43,6 @@ const Works = () => {
 				},
 				{
 					img: "/tailwind.png",
-
 					name: "TailwindCSS",
 				},
 			],
@@ -80,7 +78,7 @@ const Works = () => {
 		// },
 	];
 
-	const DetailCard = () => (
+	const DetailCard = ({ techStack, description }) => (
 		<div
 			className="bg-slate-800 text-slate-200 md:h-fit md:w-full md:bottom-[-25%]
 			 md:absolute w-[85vw]
@@ -89,26 +87,16 @@ const Works = () => {
 			<h2 className="font-semibold text-2xl">CyberAni</h2>
 			<h4 className="font-normal text-xl">Techstack:</h4>
 			<div className="flex flex-wrap justify-evenly">
-				<div className="grid grid-cols-1 place-items-center w-24">
-					<img src={"/react.png"} width={36} height={36} />
-					<p className="text-base font-light">React</p>
-				</div>
-				<div className="grid grid-cols-1 place-items-center w-24">
-					<img src={"/nextJS.svg"} width={36} height={36} />
-					<p className="text-base font-light">Next.js</p>
-				</div>
-				<div className="grid grid-cols-1 place-items-center w-24">
-					<img src={"/tailwind.png"} width={36} height={36} />
-					<p className="text-base font-light">TailwindCSS</p>
-				</div>
+				{techStack.map((tech) => (
+					<div className="grid grid-cols-1 place-items-center w-24">
+						<img src={tech.img} width={36} height={36} />
+						<p className="text-base font-light">{tech.name}</p>
+					</div>
+				))}
 			</div>
 			<div className="px-3 md:group-hover:visible md:invisible md:group-hover:block">
 				<h4 className="font-normal text-xl">Description: </h4>
-				<p className="text-base font-light">
-					CyberAni is a free anime streaming platform built with React, Next.js,
-					and TailwindCSS. It is a private project for educational purposes
-					only. Thanks to @riimuru for the API.
-				</p>
+				<p className="text-base font-light">{description}</p>
 			</div>
 		</div>
 	);
@@ -127,15 +115,18 @@ const Works = () => {
 				</p>
 
 				<div className="flex flex-wrap">
-					{workImages.map((image) => (
+					{workData.map((data) => (
 						<div
 							className="shadow-lg shadow-[#040c16] group container
 							 rounded-md mx-auto md:relative flex items-end md:overflow-hidden
 							 md:w-[400px] w-[100vw] bg-no-repeat bg-center bg-cover min-h-[480px] m-4"
-							key={image.title}
-							style={{ backgroundImage: `url(${image.imgURL})` }}
+							key={data.title}
+							style={{ backgroundImage: `url(${data.imgURL})` }}
 						>
-							<DetailCard />
+							<DetailCard
+								description={data.description}
+								techStack={data.techStack}
+							/>
 						</div>
 					))}
 				</div>
