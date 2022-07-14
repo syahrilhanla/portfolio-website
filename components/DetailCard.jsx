@@ -25,7 +25,7 @@ const DetailCard = ({
 				</div>
 			))}
 		</div>
-		<div className="px-12 md:group-hover:visible md:invisible md:group-hover:block">
+		<div className="md:px-12 px-1 md:group-hover:visible md:invisible md:group-hover:block">
 			<h4 className="font-normal text-xl">Description: </h4>
 			<p className="text-base font-light">{description}</p>
 		</div>

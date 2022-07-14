@@ -4,8 +4,8 @@ import { HiDownload } from "react-icons/hi";
 const About = () => {
 	return (
 		<div
-			className="min-h-screen text-slate-300 bg-[#0c2852]
-			  md:px-10 px-3 md:pb-0 flex flex-col justify-center items-center"
+			className="min-h-screen text-slate-300 bg-[#0c2852] border-none
+			  md:px-10 px-3 md:pb-0 pb-12 flex flex-col justify-center items-center"
 			name="about"
 		>
 			<div className="md:grid grid-cols-2 gap-x-8 w-[80%] mt-10 md:mt-0">
