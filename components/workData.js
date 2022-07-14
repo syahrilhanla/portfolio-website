@@ -8,12 +8,12 @@ const workData = [
 			"CyberAni is a free anime streaming platform built with React, Next.js,and TailwindCSS. It is a private project for educational purposes only. Thanks to @riimuru for the API.",
 		techStack: [
 			{
-				img: "/react.png",
-				name: "React",
-			},
-			{
 				img: "/nextJS.svg",
 				name: "Next.js",
+			},
+			{
+				img: "/redux.svg",
+				name: "Redux",
 			},
 			{
 				img: "/tailwind.png",
