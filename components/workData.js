@@ -27,19 +27,19 @@ const workData = [
 		repoAddress: "https://github.com/syahrilhanla/proyek-skripsi",
 		projectAddress: "https://ia-statistics.vercel.app/",
 		description:
-			"CyberAni is a free anime streaming platform built with React, Next.js,and TailwindCSS. It is a private project for educational purposes only. Thanks to @riimuru for the API.",
+			"A real project based on University's Research for Progress Tracking Learning Media with user authorization and detect user's activity. Built with Next.js, Material-UI, and Firebase.",
 		techStack: [
 			{
 				img: "/nextJS.svg",
 				name: "Next.js",
 			},
 			{
-				img: "/react.png",
-				name: "React",
+				img: "/mui.svg",
+				name: "Material-UI",
 			},
 			{
-				img: "/tailwind.png",
-				name: "TailwindCSS",
+				img: "/firebase.png",
+				name: "Firebase",
 			},
 		],
 	},
@@ -49,15 +49,15 @@ const workData = [
 		repoAddress: "https://github.com/syahrilhanla/shopping-cart",
 		projectAddress: "https://syahrilhanla.github.io/shopping-cart/",
 		description:
-			"CyberAni is a free anime streaming platform built with React, Next.js,and TailwindCSS. It is a private project for educational purposes only. Thanks to @riimuru for the API.",
+			"A full page shopping cart built with React, Redux, and TailwindCSS. Containing all the functionality of shopping cart page should have (Frontend Aspects)",
 		techStack: [
 			{
 				img: "/react.png",
 				name: "React",
 			},
 			{
-				img: "/nextJS.svg",
-				name: "Next.js",
+				img: "/redux.svg",
+				name: "Redux",
 			},
 			{
 				img: "/tailwind.png",

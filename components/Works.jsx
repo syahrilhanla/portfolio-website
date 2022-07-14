@@ -20,8 +20,8 @@ const Works = () => {
 						<div
 							className="shadow-lg shadow-[#040c16] group container
 							 rounded-md mx-auto md:relative flex items-end md:overflow-hidden
-							 md:w-[400px] w-[100vw] bg-no-repeat bg-center 
-							 bg-cover md:min-h-[480px] min-h-[100vh] m-4"
+							 md:w-[400px] w-[100vw] bg-center bg-cover
+							 bg-no-repeat md:min-h-[480px] min-h-[100vh] m-4"
 							key={data.title}
 							style={{ backgroundImage: `url(${data.imgURL})` }}
 						>
