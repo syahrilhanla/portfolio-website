@@ -1,13 +1,8 @@
+import Image from "next/image";
 import Link from "next/link";
 
 const Works = () => {
 	const workImages = [
-		{
-			imgURL: "shopping-cart.png",
-			title: "Redux Shopping Cart",
-			repoAddress: "https://github.com/syahrilhanla/shopping-cart",
-			projectAddress: "https://syahrilhanla.github.io/shopping-cart/",
-		},
 		{
 			imgURL: "cyberani.png",
 			title: "CyberAni",
@@ -20,6 +15,13 @@ const Works = () => {
 			repoAddress: "https://github.com/syahrilhanla/proyek-skripsi",
 			projectAddress: "https://ia-statistics.vercel.app/",
 		},
+		{
+			imgURL: "shopping-cart.png",
+			title: "Redux Shopping Cart",
+			repoAddress: "https://github.com/syahrilhanla/shopping-cart",
+			projectAddress: "https://syahrilhanla.github.io/shopping-cart/",
+		},
+
 		// {
 		// 	imgURL: "laragigs.png",
 		// 	title: "Laragigs",
@@ -27,6 +29,38 @@ const Works = () => {
 		// 	projectAddress: "/",
 		// },
 	];
+
+	const DetailCard = () => (
+		<div
+			className="bg-slate-800 text-slate-200 h-fit w-full 
+		absolute bottom-0 left-0 py-2 rounded-sm group-hover:h-fit"
+		>
+			<h2 className="font-semibold text-2xl">CyberAni</h2>
+			<h4 className="font-normal text-xl">Techstack:</h4>
+			<div className="flex flex-wrap justify-evenly">
+				<div className="grid grid-cols-1 place-items-center w-24">
+					<img src={"/react.png"} width={36} height={36} />
+					<p className="text-base font-light">React</p>
+				</div>
+				<div className="grid grid-cols-1 place-items-center w-24">
+					<img src={"/nextJS.svg"} width={36} height={36} />
+					<p className="text-base font-light">Next.js</p>
+				</div>
+				<div className="grid grid-cols-1 place-items-center w-24">
+					<img src={"/tailwind.png"} width={36} height={36} />
+					<p className="text-base font-light">TailwindCSS</p>
+				</div>
+			</div>
+			<div className="group-hover:block hidden overflow-hidden px-3">
+				<h4 className="font-normal text-xl">Description: </h4>
+				<p className="text-base font-light">
+					CyberAni is a free anime streaming platform built with React, Next.js,
+					and TailwindCSS. It is a private project for educational purposes
+					only. Thanks to @riimuru for the API.
+				</p>
+			</div>
+		</div>
+	);
 
 	return (
 		<div
@@ -41,38 +75,25 @@ const Works = () => {
 					# These are some project I've been working with
 				</p>
 
-				<div className="grid grid-cols-1 md:grid-cols-3 gap-3 ">
+				<div className="flex flex-wrap">
 					{workImages.map((image) => (
 						<div
 							style={{ backgroundImage: `url(${image.imgURL})` }}
-							className="relative shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto max-w-[16rem] bg-no-repeat bg-center bg-cover h-[250px] z-0"
+							className="relative shadow-lg shadow-[#040c16] group container
+							 rounded-md flex justify-center items-center mx-auto
+							  w-[55%] bg-no-repeat bg-center bg-cover min-h-[480px] z-0 m-8"
 							key={image.title}
 						>
-							<div
+							{/* <div
 								className=" absolute top-0 left-0 bg-gray-900 bg-no-repeat bg-center bg-cover 
-								h-full w-full opacity-0 group-hover:opacity-70  duration-300"
-							/>
-							<div className="opacity-0 group-hover:opacity-100 group-hover:z-50 ">
+								h-full w-full opacity-0 group-hover:opacity-70 duration-300"
+							/> */}
+							<div className="opacity-0 group-hover:opacity-0 group-hover:z-50 ">
 								<span className="text-3xl font-light text-white tracking-wider sm:p-4">
 									{image.title}
 								</span>
-								<div className="pt-8 text-center">
-									<Link href={image.projectAddress}>
-										<a target={"_blank"}>
-											<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 text-xl font-normal hover:text-pink-600 duration-300">
-												Demo
-											</button>
-										</a>
-									</Link>
-									<Link href={image.repoAddress}>
-										<a target={"_blank"}>
-											<button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 text-xl font-normal hover:text-pink-600 duration-300">
-												Code
-											</button>
-										</a>
-									</Link>
-								</div>
 							</div>
+							<DetailCard />
 						</div>
 					))}
 				</div>
