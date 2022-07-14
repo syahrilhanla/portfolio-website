@@ -9,7 +9,7 @@ const DetailCard = ({
 }) => (
 	<div
 		className="bg-slate-800 text-slate-200 md:h-fit md:w-full md:bottom-[-25%]
-			 md:absolute w-[85vw]
+			 md:absolute max-w-[85vw] shadow-[0_-15px_15px_0px_rgba(0,0,0,0.3)]
 		  left-0 py-2 rounded-sm md:group-hover:bottom-0 duration-500"
 	>
 		<h2 className="font-semibold text-2xl pb-2">{title}</h2>
@@ -22,7 +22,7 @@ const DetailCard = ({
 				</div>
 			))}
 		</div>
-		<div className="px-3 md:group-hover:visible md:invisible md:group-hover:block">
+		<div className="px-12 md:group-hover:visible md:invisible md:group-hover:block">
 			<h4 className="font-normal text-xl">Description: </h4>
 			<p className="text-base font-light">{description}</p>
 		</div>
