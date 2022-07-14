@@ -16,7 +16,10 @@ const DetailCard = ({
 		<h4 className="font-normal text-xl pb-2">Techstack:</h4>
 		<div className="flex flex-wrap justify-evenly">
 			{techStack.map((tech) => (
-				<div className="grid grid-cols-1 place-items-center w-24">
+				<div
+					className="grid grid-cols-1 place-items-center w-24"
+					key={tech.name}
+				>
 					<img src={tech.img} width={36} height={36} />
 					<p className="text-base font-light">{tech.name}</p>
 				</div>
