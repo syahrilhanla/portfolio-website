@@ -65,6 +65,28 @@ const workData = [
 			},
 		],
 	},
+	{
+		imgURL: "nike-clone.png",
+		title: "Nike E-Commerce Clone ",
+		repoAddress: "https://github.com/syahrilhanla/nike-clone",
+		projectAddress: "https://nike-syahril.vercel.app/",
+		description:
+			"A clone website of Nike.com E-Commerce including its functionality, currently under construction. Built with Next.js, Redux, and TailwindCSS.",
+		techStack: [
+			{
+				img: "/nextJS.svg",
+				name: "Next.js",
+			},
+			{
+				img: "/redux.svg",
+				name: "Redux",
+			},
+			{
+				img: "/tailwind.png",
+				name: "TailwindCSS",
+			},
+		],
+	},
 
 	// {
 	// 	imgURL: "laragigs.png",
