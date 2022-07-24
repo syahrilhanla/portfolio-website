@@ -44,6 +44,32 @@ const workData = [
 		],
 	},
 	{
+		imgURL: "the-island-shop.png",
+		title: "The Island Shop",
+		repoAddress: "https://github.com/syahrilhanla/PTS_SE_SyahrilHanla",
+		projectAddress: "https://the-island-shop.vercel.app/",
+		description:
+			"A Point of Sales app which has Shopping Cart and Transaction based on real life case logic. Built with Next.js, Flowbite, TailwindCSS, also Node.js, JSON Server, and Heroku for the backend.",
+		techStack: [
+			{
+				img: "/nextJS.svg",
+				name: "Next.js",
+			},
+			{
+				img: "/heroku.svg",
+				name: "Heroku",
+			},
+			{
+				img: "/flowbite.svg",
+				name: "Flowbite",
+			},
+			{
+				img: "/NodeJS.svg",
+				name: "Node.js",
+			},
+		],
+	},
+	{
 		imgURL: "shopping-cart.png",
 		title: "Redux Shopping Cart",
 		repoAddress: "https://github.com/syahrilhanla/shopping-cart",
