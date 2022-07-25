@@ -64,7 +64,7 @@ const workData = [
 				name: "Flowbite",
 			},
 			{
-				img: "/NodeJS.svg",
+				img: "/NodeJS.png",
 				name: "Node.js",
 			},
 		],
