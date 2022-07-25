@@ -56,16 +56,16 @@ const workData = [
 				name: "Next.js",
 			},
 			{
-				img: "/heroku.svg",
-				name: "Heroku",
-			},
-			{
 				img: "/flowbite.svg",
 				name: "Flowbite",
 			},
 			{
 				img: "/NodeJS.png",
 				name: "Node.js",
+			},
+			{
+				img: "/heroku.svg",
+				name: "Heroku",
 			},
 		],
 	},
