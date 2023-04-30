@@ -1,4 +1,24 @@
+import { useState } from "react";
+
 const Contact = () => {
+	const [formState, setFormState] = useState(false);
+
+	const [name, setName] = useState("");
+	const [email, setEmail] = useState("");
+	const [message, setMessage] = useState("");
+
+	const disableSubmit = () => {
+		if (name.length < 3) return true;
+
+		if (email.length > 3) {
+			if (!email.split("").includes("@")) return true;
+		} else return false;
+
+		if (message.length < 3) return true;
+
+		return false;
+	}
+
 	return (
 		<div
 			name="contact"
@@ -24,23 +44,29 @@ const Contact = () => {
 					type="text"
 					placeholder="Name"
 					name="name"
+					onChange={e => setName(e.target.value)}
 				/>
 				<input
 					className="my-4 p-2 bg-[#ccd6f6] rounded-md placeholder-gray-500"
 					type="email"
 					placeholder="Email"
 					name="email"
+					onChange={e => setEmail(e.target.value)}
 				/>
 				<textarea
 					className="bg-[#ccd6f6] p-2 rounded-md placeholder-gray-500"
 					name="message"
 					rows="10"
 					placeholder="Message"
+					onChange={e => setMessage(e.target.value)}
 				></textarea>
 				<button
 					className="text-white border-2 hover:bg-pink-600
 				 hover:border-pink-600 px-4 py-3 my-4 mx-auto
-				  flex items-center rounded-md duration-150"
+				  flex items-center rounded-md duration-300
+					disabled:bg-slate-300 disabled:text-slate-700
+					disabled:border-slate-700 disabled:cursor-not-allowed"
+					disabled={disableSubmit()}
 				>
 					Let's Collaborate
 				</button>
