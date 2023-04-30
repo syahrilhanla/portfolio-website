@@ -20,7 +20,7 @@ const Introduction = () => {
 			</p>
 
 			<Link to="works" smooth={true} duration={500}>
-				<button className="flex flex-row justify-between items-center px-5 py-2 border border-white border-2 rounded-md text-white w-[9rem] mt-4 font-light hover:bg-slate-300 hover:font-normal hover:text-slate-700 hover:border-bg-slate-700 duration-300 group">
+				<button className="flex flex-row justify-between items-center px-5 py-2 border border-white rounded-md text-white w-[9rem] mt-4 font-light hover:bg-slate-300 hover:font-normal hover:text-slate-700 hover:border-bg-slate-700 duration-300 group">
 					View Works
 					<span className="group-hover:rotate-90 duration-300 text-pink-500">
 						<HiArrowNarrowRight />

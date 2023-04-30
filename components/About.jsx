@@ -28,8 +28,13 @@ const About = () => {
 			</div>
 			<div className="grid justify-center md:grid-cols-2 md:justify-items-end md:mr-8">
 				<div>
-					<Link href={"/Syahril Hanla_FrontendDev.pdf"}>
-						<button className="flex flex-row justify-between items-center px-5 py-2 border border-white border-2 rounded-md text-white w-fit mt-4 font-light hover:bg-slate-300 hover:font-normal hover:text-slate-700 hover:border-bg-slate-700 duration-300">
+					<Link href={"/Syahril Hanla_FrontendDev.pdf"} download>
+						<button className="flex flex-row justify-between items-center 
+							px-5 py-2 border border-white rounded-md text-white 
+							mt-4 font-light hover:bg-slate-300 w-[13rem]
+							 hover:text-slate-700 
+							hover:border-none
+							hover:border-bg-slate-700 duration-300">
 							Download Resume
 							<span className=" text-pink-500">
 								<HiDownload />
