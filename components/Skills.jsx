@@ -39,7 +39,7 @@ const Skills = () => {
 						<p className="font-light">Redux</p>
 					</div>
 					<div className="px-2 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
-						<Image src={"/node.png"} width={64} height={64} />
+						<Image src={"/nodeJS.svg"} width={64} height={64} />
 						<p className="font-light">Node.js</p>
 					</div>
 					<div className="px-2 py-2 shadow-md shadow-[#040c16] hover:scale-110 duration-500">
