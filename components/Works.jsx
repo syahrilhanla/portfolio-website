@@ -9,9 +9,9 @@ const Works = () => {
 		>
 			<div className="flex justify-start flex-col sm:mt-3 mt-[6rem] md:w-[70vw] w-[85vw]">
 				<h1 className="text-4xl w-min font-medium border-b-4 border-pink-600 py-1">
-					Works
+					Projects
 				</h1>
-				<p className="text-xl font-light py-3 mb-6 text-left">
+				<p className="font-light py-3 mb-3 text-left">
 					# These are some project I've been working with
 				</p>
 
