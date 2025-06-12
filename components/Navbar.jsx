@@ -1,11 +1,32 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 import Image from "next/image";
-import SocialIcons from "./SocialIcons";
 const Navbar = () => {
 	const [navbar, setNavbar] = useState(false);
+	const [showNavbar, setShowNavbar] = useState(true);
+
+	const lastScrollY = useRef(0);
+
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > lastScrollY.current) {
+				// Scrolling down
+				setShowNavbar(false);
+			} else {
+				// Scrolling up
+				setShowNavbar(true);
+			}
+			lastScrollY.current = window.scrollY;
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 
 	const setMobileNavbar = () => {
 		if (!navbar) {
@@ -15,7 +36,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="fixed h-[78px] w-full flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-10">
+		<div className={`fixed h-[78px] w-full flex justify-between items-center px-4 bg-[#0f172a] bg-opacity-95 shadow-lg text-gray-300 z-10 ${showNavbar ? "translate-y-0" : "-translate-y-full"} transition-transform duration-300`}>
 			<div className="ml-4">
 				<Image
 					src={"/syahrilLogo.png"}
@@ -120,7 +141,6 @@ const Navbar = () => {
 				</li>
 			</ul>
 
-			<SocialIcons navbar={navbar} />
 		</div>
 	);
 };
