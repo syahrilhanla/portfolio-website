@@ -3,7 +3,7 @@ import { BsCaretRight } from "react-icons/bs";
 const PraktisExperience = () => {
 	return (
 		<div className="grid gap-1.5">
-			<h3 className="text-xl mb-1">
+			<h3 className="text-base md:text-xl mb-1">
 				<strong className="font-semibold">Frontend Engineer</strong> @{" "}
 				<a
 					className="text-pink-500 font-light"

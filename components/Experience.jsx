@@ -17,7 +17,7 @@ const Experience = () => {
 					Where I've Worked
 				</h1>
 
-				<div className="w-full grid grid-cols-[4fr_6fr] gap-4 mt-6">
+				<div className="w-full grid md:grid-cols-[4fr_6fr] gap-4 mt-6">
 					<ExperienceTabs activeTab={activeTab} setActiveTab={setActiveTab} />
 
 					<div className="min-h-[300px] overflow-visible max-w-md text-sm md:text-base">

@@ -3,7 +3,7 @@ import { BsCaretRight } from "react-icons/bs";
 const BirranExperience = () => {
 	return (
 		<div className="grid gap-1.5">
-			<h3 className="text-xl mb-1">
+			<h3 className="text-base md:text-xl mb-1">
 				<strong className="font-semibold">Manual QA Tester</strong> @{" "}
 				<a
 					className="text-pink-500 font-light"
