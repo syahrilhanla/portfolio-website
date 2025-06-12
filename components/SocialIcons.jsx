@@ -7,7 +7,9 @@ const SocialIcons = ({ navbar }) => {
 	return (
 		<div
 			className={
-				navbar ? "hidden" : `hidden md:flex fixed flex-col top-[30%] left-2`
+				navbar
+					? "hidden"
+					: `hidden md:flex fixed flex-col top-1/2 left-2 -translate-y-1/2`
 			}
 		>
 			<ul>

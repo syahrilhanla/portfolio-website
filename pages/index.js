@@ -6,6 +6,7 @@ import Home from "../components/Home";
 import Navbar from "../components/Navbar";
 import Skills from "../components/Skills";
 import Works from "../components/Works";
+import SocialIcons from "../components/SocialIcons";
 
 export default function Startup() {
 	return (
@@ -15,6 +16,7 @@ export default function Startup() {
 				<meta name="description" content="Portfolio Website by Syahril Hanla" />
 				<link rel="icon" href="/syahrilLogo-icon.png" />
 			</Head>
+			<SocialIcons />
 			<Navbar />
 			<Home />
 			<About />
