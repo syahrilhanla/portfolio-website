@@ -59,7 +59,7 @@ const ExperienceTabs = ({ activeTab, setActiveTab }) => {
 		<div className="relative flex md:flex-col flex-row w-full md:w-auto">
 			{indicatorStyle.visible && (
 				<span
-					className={`absolute z-50 bg-pink-500 rounded transition-all duration-300`}
+					className={`absolute z-10 bg-pink-500 rounded transition-all duration-300`}
 					style={{
 						top: indicatorStyle.top,
 						left: indicatorStyle.left,
