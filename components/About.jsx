@@ -18,11 +18,7 @@ const About = () => {
 					Hi. Im Syahril, nice to meet you. Please take a look around.
 				</h2>
 				<p className="font-light mt-4 md:mt-0 text-slate-300">
-					I'm passionate about building excellent software that improves the
-					lives of those around me. I specialize in creating software for
-					clients ranging from individuals and small businesses all the way to
-					large enterprise corporations. What would you do if you had a software
-					expert available at your fingertips?
+				I'm a software engineer with over 3 years of experience building responsive, user-focused web applications. I have a strong foundation in modern JavaScript frameworks and UI/UX best practices, and I enjoy turning complex problems into elegant, scalable solutions. Currently, I'm expanding my skills in backend technologies and cloud infrastructure, aiming to transition into a full stack engineering role. I'm passionate about continuous learning and excited to contribute to teams that value innovation and growth.
 				</p>
 			</div>
 			<div className="grid justify-center md:grid-cols-2 md:justify-items-end md:mr-8">
