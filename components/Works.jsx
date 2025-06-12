@@ -9,9 +9,9 @@ const Works = () => {
 		>
 			<div className="flex flex-col sm:mt-3 mt-[6rem] w-full max-w-5xl">
 				<div className="flex items-center gap-3 mb-8">
-					<span className="text-pink-400 text-2xl font-mono">03.</span>
-					<h1 className="text-3xl md:text-4xl font-bold text-slate-100 tracking-tight">
-						Some Things I’ve Built
+					<span className="text-pink-400 text-2xl font-mono">05.</span>
+					<h1 className="text-3xl md:text-4xl font-semibold text-slate-100 tracking-tight">
+						Projects
 					</h1>
 					<div className="flex-1 border-b border-slate-700 ml-4" />
 				</div>
@@ -44,7 +44,7 @@ const Works = () => {
 									<h2 className="text-2xl md:text-3xl font-bold text-slate-100 mb-4 md:mb-2">
 										{data.title}
 									</h2>
-									<div className="bg-[#181f33] rounded-md p-4 mb-4 shadow border border-slate-700 text-slate-200 text-base md:text-lg font-light w-full md:w-auto">
+									<div className="bg-[#181f33] rounded-md p-4 mb-4 shadow text-slate-200 text-sm font-light w-full md:w-auto">
 										{data.description}
 									</div>
 									<div className="flex flex-wrap gap-3 mb-4 md:justify-end">

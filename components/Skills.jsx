@@ -37,10 +37,8 @@ const skillsData = [
 			{ name: "GitLab", icon: "/gitlab.svg" },
 			{ name: "Postman", icon: "/postman.svg" },
 			{ name: "Vercel", icon: "/vercel.svg" },
-			{ name: "Heroku", icon: "/heroku.svg" },
+			// { name: "Heroku", icon: "/heroku.svg" },
 			{ name: "Figma", icon: "/figma.svg" },
-			{ name: "MUI", icon: "/mui.svg" },
-			{ name: "Flowbite", icon: "/flowbite.svg" },
 		],
 	},
 ];
@@ -52,13 +50,13 @@ const Skills = () => {
 			className="min-h-screen text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-3 pb-7"
 		>
 			<div className="flex flex-col w-full max-w-5xl">
-				<h1 className="text-4xl w-min font-medium border-b-2 border-pink-600 py-1 ml-4 mb-2">
-					Skills
-				</h1>
-				<p className="text-xl text-left font-light pt-3 pb-8 px-4">
-					<span className="text-pink-400 font-semibold">#</span> These are the
-					technologies I've worked with
-				</p>
+				<div className="flex items-center gap-3 mb-8">
+					<span className="text-pink-400 text-2xl font-mono">04.</span>
+					<h1 className="text-3xl md:text-4xl font-semibold text-slate-100 tracking-tight">
+						Skills
+					</h1>
+					<div className="flex-1 border-b border-slate-700 ml-4" />
+				</div>
 				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full overflow-visible">
 					{skillsData.map((cat) => (
 						<div
@@ -81,7 +79,7 @@ const Skills = () => {
 											alt={item.name}
 											className="mb-2"
 										/>
-										<span className="absolute bottom-2 left-1/2 -translate-x-1/2 translate-y-full bg-slate-900 text-xs text-slate-100 px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-200 whitespace-nowrap z-50 shadow-lg border border-pink-400">
+										<span className="absolute bottom-2 left-1/2 -translate-x-1/2 translate-y-full bg-slate-900 text-xs text-slate-100 px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-200 whitespace-nowrap z-50 shadow-lg border border-pink-300">
 											{item.name}
 										</span>
 									</div>
