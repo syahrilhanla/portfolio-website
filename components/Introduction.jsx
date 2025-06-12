@@ -7,20 +7,19 @@ const Introduction = () => {
 			<p className="text-pink-600 font-medium text-lg md:mt-0 mt-24 mb-2">
 				Hi, my name is
 			</p>
-			<h1 className="text-white text-5xl font-bold mt-[-10px]">
+			<h1 className="text-slate-200 text-5xl font-bold mt-[-10px]">
 				Syahril Hanla
 			</h1>
 			<h1 className="text-slate-500 text-5xl font-bold mb-3">
-				Im a Full Stack Developer.
+				Software Engineer.
 			</h1>
-			<p className="text-slate-400 md:text-base text-base">
-				Im a full-stack developer specializing in building (and occasionally
-				designing) exceptional digital experiences. Currently, Im focused on
-				building responsive full-stack web applications.
+			<p className="text-slate-300 md:text-base max-w-lg text-base flex-wrap font-light">
+				I'm a software engineer with 3+ years of experience specializing in frontend development. I'm now expanding my skills in backend and cloud technologies to become a full stack developer.
 			</p>
 
 			<Link to="works" smooth={true} duration={500}>
-				<button className="flex flex-row justify-between items-center px-5 py-2 border border-white rounded-md text-white w-[9rem] mt-4 font-light hover:bg-slate-300 hover:font-normal hover:text-slate-700 hover:border-bg-slate-700 duration-300 group">
+				<button className="flex flex-row justify-between items-center px-5 py-2 border border-slate-200 rounded-md text-slate-200 
+					w-[9rem] mt-4 font-light hover:bg-slate-400 hover:scale-x-105  hover:text-slate-900/80 hover:border-bg-slate-700 duration-300 group">
 					View Works
 					<span className="group-hover:rotate-90 duration-300 text-pink-500">
 						<HiArrowNarrowRight />

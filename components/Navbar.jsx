@@ -1,11 +1,37 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 
 import Image from "next/image";
-import SocialIcons from "./SocialIcons";
 const Navbar = () => {
 	const [navbar, setNavbar] = useState(false);
+	const [showNavbar, setShowNavbar] = useState(true);
+	const [isAtTop, setIsAtTop] = useState(true);
+
+	// Track the last scroll position to determine scroll direction
+	// This is used to hide the navbar when scrolling down and show it when scrolling up
+	const lastScrollY = useRef(0);
+
+	// Effect to handle scroll events and update the navbar visibility
+	useEffect(() => {
+		const handleScroll = () => {
+			if (window.scrollY > lastScrollY.current) {
+				// Scrolling down
+				setShowNavbar(false);
+			} else {
+				// Scrolling up
+				setShowNavbar(true);
+			}
+			lastScrollY.current = window.scrollY;
+			setIsAtTop(window.scrollY === 0);
+		};
+
+		window.addEventListener("scroll", handleScroll);
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 
 	const setMobileNavbar = () => {
 		if (!navbar) {
@@ -15,7 +41,15 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className="fixed h-[78px] w-full flex justify-between items-center px-4 bg-[#0a192f] text-gray-300 z-10">
+		<div
+			className={`fixed h-[78px] w-full flex justify-between items-center px-4 bg-opacity-95 shadow-lg text-gray-300 z-30 ${
+				showNavbar ? "translate-y-0" : "-translate-y-full"
+			} transition-transform duration-300 ${
+				isAtTop
+					? "shadow-none translate-y-2 bg-inherit"
+					: "shadow-lg bg-[#0e1629]"
+			}`}
+		>
 			<div className="ml-4">
 				<Image
 					src={"/syahrilLogo.png"}
@@ -39,13 +73,18 @@ const Navbar = () => {
 					</Link>
 				</li>
 				<li>
+					<Link to="experience" smooth={true} duration={500}>
+						Experience
+					</Link>
+				</li>
+				<li>
 					<Link to="skills" smooth={true} duration={500}>
 						Skills
 					</Link>
 				</li>
 				<li>
 					<Link to="works" smooth={true} duration={500}>
-						Works
+						Projects
 					</Link>
 				</li>
 				<li>
@@ -56,7 +95,7 @@ const Navbar = () => {
 			</ul>
 
 			{/* Hamburger */}
-			<div className=" flex md:hidden z-10 cursor-pointer">
+			<div className=" flex md:hidden z-30 cursor-pointer">
 				{navbar ? (
 					<>
 						<FaTimes onClick={() => setNavbar((prevValue) => !prevValue)} />
@@ -119,8 +158,6 @@ const Navbar = () => {
 					</Link>
 				</li>
 			</ul>
-
-			<SocialIcons navbar={navbar} />
 		</div>
 	);
 };
