@@ -5,7 +5,7 @@ const Works = () => {
 	return (
 		<div
 			name="works"
-			className="bg-[#0c2852] min-h-screen text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem] pb-7"
+			className="min-h-screen text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem] pb-7"
 		>
 			<div className="flex justify-start flex-col sm:mt-3 mt-[6rem] md:w-[70vw] w-[85vw]">
 				<h1 className="text-4xl w-min font-medium border-b-4 border-pink-600 py-1">

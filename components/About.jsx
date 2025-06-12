@@ -4,7 +4,7 @@ import { HiDownload } from "react-icons/hi";
 const About = () => {
 	return (
 		<div
-			className="min-h-screen text-slate-300 bg-[#0c2852] border-none
+			className="min-h-screen text-slate-300 border-none
 			  md:px-10 px-3 md:pb-0 pb-12 flex flex-col justify-center items-center"
 			name="about"
 		>
@@ -28,7 +28,7 @@ const About = () => {
 			</div>
 			<div className="grid justify-center md:grid-cols-2 md:justify-items-end md:mr-8">
 				<div>
-					<Link href={"/Syahril Hanla_FrontendDev.pdf"} download>
+					<Link href={"/Syahril Hanla_FrontendDev.pdf"} target="_blank">
 						<button className="flex flex-row justify-between items-center 
 							px-5 py-2 border border-white rounded-md text-white 
 							mt-4 font-light hover:bg-slate-300 w-[13rem]

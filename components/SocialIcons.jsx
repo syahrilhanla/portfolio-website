@@ -1,5 +1,4 @@
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-import { HiOutlineMail } from "react-icons/hi";
 import { BsPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
 import { Link as Scroll } from "react-scroll";
@@ -13,10 +12,10 @@ const SocialIcons = ({ navbar }) => {
 		>
 			<ul>
 				<li className="h-[60px] w-[150px] flex justify-between items-center ml-[-100px] hover:ml-[-5px] duration-300">
-					<Link href="https://www.linkedin.com/in/syahril-hanla-45387220a/">
+					<Link href="https://www.linkedin.com/in/syahril-hanla">
 						<a
 							target="_blank"
-							className="flex justify-between items-center w-full text-gray-300"
+							className="flex justify-between items-center w-full text-gray-300 hover:text-white"
 						>
 							Linkedin <FaLinkedin size={30} />
 						</a>
@@ -26,7 +25,7 @@ const SocialIcons = ({ navbar }) => {
 					<Link href="https://github.com/syahrilhanla">
 						<a
 							target="_blank"
-							className="flex justify-between items-center w-full text-gray-300"
+							className="flex justify-between items-center w-full text-gray-300 hover:text-white"
 						>
 							Github <FaGithub size={30} />
 						</a>
@@ -36,7 +35,7 @@ const SocialIcons = ({ navbar }) => {
 					<Link href="https://www.instagram.com/syahrilhanla64/">
 						<a
 							target="_blank"
-							className="flex justify-between items-center w-full text-gray-300"
+							className="flex justify-between items-center w-full text-gray-300 hover:text-white"
 						>
 							Instagram <FaInstagram size={30} />
 						</a>
@@ -47,7 +46,7 @@ const SocialIcons = ({ navbar }) => {
 						<Link href="/" target={"_blank"}>
 							<a
 								target="_blank"
-								className="flex justify-between items-center w-full text-gray-300"
+								className="flex justify-between items-center w-full text-gray-300 hover:text-white"
 							>
 								Contact <BsPersonLinesFill size={30} />
 							</a>

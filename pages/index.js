@@ -9,7 +9,7 @@ import Works from "../components/Works";
 
 export default function Startup() {
 	return (
-		<div className="bg-[#0c2852] min-h-full">
+		<div className="bg-[#0f172a] min-h-full">
 			<Head>
 				<title>Syahril Hanla</title>
 				<meta name="description" content="Portfolio Website by Syahril Hanla" />

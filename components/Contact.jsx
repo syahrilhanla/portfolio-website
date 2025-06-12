@@ -22,7 +22,7 @@ const Contact = () => {
 	return (
 		<div
 			name="contact"
-			className="bg-[#0c2852] min-h-screen flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem]"
+			className="min-h-screen flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem]"
 		>
 			<form
 				method="POST"
