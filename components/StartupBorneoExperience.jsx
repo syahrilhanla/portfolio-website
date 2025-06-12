@@ -2,8 +2,8 @@ import { BsCaretRight } from "react-icons/bs";
 
 const StartupBorneoExperience = () => {
 	return (
-		<div className="grid gap-1.5">
-			<h3 className="text-xl mb-1">
+		<div className="grid gap-1.5 min-h-full">
+			<h3 className="text-xl mb-1 lg:whitespace-nowrap">
 				<strong className="font-semibold">Frontend Developer</strong> (Intern) @{" "}
 				<a
 					className="text-pink-500 font-light"
