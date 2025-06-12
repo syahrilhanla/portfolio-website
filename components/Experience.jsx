@@ -1,6 +1,7 @@
 import { useState } from "react";
 import PraktisExperience from "./PraktisExperience";
 import BirranExperience from "./BirranExperience";
+import StartupBorneoExperience from "./StartupBorneoExperience";
 
 const Experience = () => {
 	const [activeTab, setActiveTab] = useState("praktis");
@@ -50,6 +51,7 @@ const Experience = () => {
 					<div className="min-h-[300px] overflow-visible">
 						{activeTab === "praktis" && <PraktisExperience />}
 						{activeTab === "birran" && <BirranExperience />}
+						{activeTab === "startup" && <StartupBorneoExperience />}
 					</div>
 				</div>
 			</div>
