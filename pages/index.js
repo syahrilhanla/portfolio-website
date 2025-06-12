@@ -7,6 +7,7 @@ import Navbar from "../components/Navbar";
 import Skills from "../components/Skills";
 import Works from "../components/Works";
 import SocialIcons from "../components/SocialIcons";
+import Experience from "../components/Experience";
 
 export default function Startup() {
 	return (
@@ -14,12 +15,13 @@ export default function Startup() {
 			<Head>
 				<title>Syahril Hanla</title>
 				<meta name="description" content="Portfolio Website by Syahril Hanla" />
-				<link rel="icon" href="/syahrilLogo-icon.png" />
+				<link rel="icon" href="/favicon.ico" />
 			</Head>
 			<SocialIcons />
 			<Navbar />
 			<Home />
 			<About />
+			<Experience />
 			<Skills />
 			<Works />
 			<Contact />
