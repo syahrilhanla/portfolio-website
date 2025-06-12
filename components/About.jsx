@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { HiDownload } from "react-icons/hi";
 
 const About = () => {
@@ -28,7 +27,7 @@ const About = () => {
 			</div>
 			<div className="grid justify-center md:grid-cols-2 md:justify-items-end md:mr-8">
 				<div>
-					<Link href={"/Syahril Hanla_FrontendDev.pdf"} target="_blank">
+					<a href={"/Resume__Syahril_Hanla.pdf"} target="_blank" rel="noreferrer">
 						<button className="flex flex-row justify-between items-center 
 							px-5 py-2 border border-white rounded-md text-white 
 							mt-4 font-light hover:bg-slate-300 w-[13rem]
@@ -38,7 +37,7 @@ const About = () => {
 								<HiDownload />
 							</span>
 						</button>
-					</Link>
+					</a>
 				</div>
 				<div></div>
 			</div>
