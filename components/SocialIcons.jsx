@@ -45,11 +45,8 @@ const SocialIcons = ({ navbar }) => {
 				</li>
 				<Scroll to="contact" smooth={true} duration={500}>
 					<li className="h-[60px] w-[150px] flex justify-between items-center ml-[-100px] hover:ml-[-5px] duration-300">
-						<Link href="/" target={"_blank"}>
-							<a
-								target="_blank"
-								className="flex justify-between items-center w-full text-gray-300 hover:text-white"
-							>
+						<Link href="/">
+							<a className="flex justify-between items-center w-full text-gray-300 hover:text-white">
 								Contact <BsPersonLinesFill size={30} />
 							</a>
 						</Link>

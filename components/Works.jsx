@@ -5,7 +5,7 @@ const Works = () => {
 	return (
 		<section
 			name="works"
-			className="min-h-screen text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem] pb-7 bg-gradient-to-b from-[#0f172a] to-[#151e35]"
+			className="min-h-screen text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem] pb-7"
 		>
 			<div className="flex flex-col sm:mt-3 mt-[6rem] w-full max-w-5xl">
 				<div className="flex items-center gap-3 mb-8">
