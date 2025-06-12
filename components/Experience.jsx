@@ -6,6 +6,13 @@ import ExperienceTabs from "./ExperienceTabs";
 
 const Experience = () => {
 	const [activeTab, setActiveTab] = useState("praktis");
+	const [tabKey, setTabKey] = useState(0);
+
+	const handleTabChange = (tab) => {
+		setActiveTab(tab);
+		setTabKey((prev) => prev + 1); // force remount for animation
+	};
+
 	return (
 		<div
 			className="min-h-screen text-slate-300 border-none overflow-visible
@@ -18,12 +25,20 @@ const Experience = () => {
 				</h1>
 
 				<div className="w-full grid md:grid-cols-[4fr_6fr] gap-4 mt-6">
-					<ExperienceTabs activeTab={activeTab} setActiveTab={setActiveTab} />
+					<ExperienceTabs
+						activeTab={activeTab}
+						setActiveTab={handleTabChange}
+					/>
 
-					<div className="min-h-[300px] overflow-visible max-w-md text-sm md:text-base">
-						{activeTab === "praktis" && <PraktisExperience />}
-						{activeTab === "birran" && <BirranExperience />}
-						{activeTab === "startup" && <StartupBorneoExperience />}
+					<div className="max-h-[16rem] overflow-visible max-w-md text-sm md:text-base">
+						<div
+							key={tabKey}
+							className="animate-fade-in transition-all duration-300"
+						>
+							{activeTab === "praktis" && <PraktisExperience />}
+							{activeTab === "birran" && <BirranExperience />}
+							{activeTab === "startup" && <StartupBorneoExperience />}
+						</div>
 					</div>
 				</div>
 			</div>
@@ -32,3 +47,14 @@ const Experience = () => {
 };
 
 export default Experience;
+
+// Add this to your global CSS (e.g., globals.css) if not using Tailwind's animate utilities:
+/*
+@keyframes fade-in {
+  from { opacity: 0; transform: translateY(16px);}
+  to { opacity: 1; transform: translateY(0);}
+}
+.animate-fade-in {
+  animation: fade-in 0.3s;
+}
+*/
