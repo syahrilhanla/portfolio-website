@@ -59,20 +59,20 @@ const Skills = () => {
 					<span className="text-pink-400 font-semibold">#</span> These are the
 					technologies I've worked with
 				</p>
-				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full">
+				<div className="grid grid-cols-1 md:grid-cols-2 gap-8 w-full overflow-visible">
 					{skillsData.map((cat) => (
 						<div
 							key={cat.category}
-							className="bg-[#151e35] rounded-xl shadow-lg p-6 flex flex-col items-center border border-slate-800 hover:shadow-pink-500/10 transition-shadow duration-300"
+							className="bg-[#151e35] rounded-xl hover:z-30 shadow-lg p-6 flex flex-col items-center border border-slate-800 hover:shadow-pink-500/10 transition-shadow duration-300 overflow-visible"
 						>
 							<h2 className="text-2xl font-semibold text-pink-400 mb-4 tracking-wide w-full text-left pl-2">
 								{cat.category}
 							</h2>
-							<div className="grid grid-cols-2 sm:grid-cols-3 gap-4 w-full">
+							<div className="grid grid-cols-2 sm:grid-cols-3 gap-6 w-full overflow-visible">
 								{cat.items.map((item) => (
 									<div
 										key={item.name}
-										className="flex flex-col items-center p-3 rounded-md bg-[#1a233a] shadow-md shadow-[#040c16]/30 hover:scale-105 hover:shadow-pink-400/30 duration-300"
+										className="flex flex-col items-center p-3 rounded-md bg-[#1a233a] shadow-md shadow-[#040c16]/30 hover:scale-105 hover:shadow-pink-400/30 duration-300 group relative z-10 overflow-visible"
 									>
 										<Image
 											src={item.icon}
@@ -81,9 +81,9 @@ const Skills = () => {
 											alt={item.name}
 											className="mb-2"
 										/>
-										<p className="font-light text-sm mt-2 text-slate-200">
+										<span className="absolute bottom-2 left-1/2 -translate-x-1/2 translate-y-full bg-slate-900 text-xs text-slate-100 px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-200 whitespace-nowrap z-50 shadow-lg border border-pink-400">
 											{item.name}
-										</p>
+										</span>
 									</div>
 								))}
 							</div>
