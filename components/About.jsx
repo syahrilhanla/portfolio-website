@@ -18,7 +18,7 @@ const About = () => {
 				<h2 className="text-4xl font-semibold md:text-right">
 					Hi. Im Syahril, nice to meet you. Please take a look around.
 				</h2>
-				<p className="font-light mt-4 md:mt-0">
+				<p className="font-light mt-4 md:mt-0 text-slate-300">
 					I'm passionate about building excellent software that improves the
 					lives of those around me. I specialize in creating software for
 					clients ranging from individuals and small businesses all the way to
@@ -32,9 +32,7 @@ const About = () => {
 						<button className="flex flex-row justify-between items-center 
 							px-5 py-2 border border-white rounded-md text-white 
 							mt-4 font-light hover:bg-slate-300 w-[13rem]
-							 hover:text-slate-700 
-							hover:border-none
-							hover:border-bg-slate-700 duration-300">
+							 hover:text-slate-700  duration-300">
 							Download Resume
 							<span className=" text-pink-500">
 								<HiDownload />

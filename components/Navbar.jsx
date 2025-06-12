@@ -38,7 +38,7 @@ const Navbar = () => {
 	};
 
 	return (
-		<div className={`fixed h-[78px] w-full flex justify-between items-center px-4 bg-[#0f172a] bg-opacity-95 shadow-lg text-gray-300 z-10 ${showNavbar ? "translate-y-0" : "-translate-y-full"} transition-transform duration-300 ${isAtTop ? "shadow-none" : "shadow-md"}`}>
+		<div className={`fixed h-[78px] w-full flex justify-between items-center px-4 bg-[#0f172a] bg-opacity-95 shadow-lg text-gray-300 z-10 ${showNavbar ? "translate-y-0" : "-translate-y-full"} transition-transform duration-300 ${isAtTop ? "shadow-none translate-y-2" : "shadow-md"}`}>
 			<div className="ml-4">
 				<Image
 					src={"/syahrilLogo.png"}
