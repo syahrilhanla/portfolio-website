@@ -14,7 +14,12 @@ const PraktisExperience = () => {
 					Praktis
 				</a>
 			</h3>
-			<p className="font-light mb-3">2022 - 2025</p>
+			<p className="font-light mb-1 flex justify-between">
+				<span className="text-sm text-slate-400">
+					South Jakarta, DKI Jakarta (Hybrid)
+				</span>
+				2022 - 2025
+			</p>
 
 			<ul className="list-none space-y-3">
 				<li className="flex gap-2 pl-0 text-pink-400 cursor-auto">
@@ -36,9 +41,11 @@ const PraktisExperience = () => {
 						<BsCaretRight />
 					</span>
 					<p className="-mt-1.5 text-slate-300  font-light leading-6">
-						Worked closely with cross-functional teams — including Product,
-						Design, QA, and other Engineers — to deliver high quality and
-						user-centric features in Agile development environment.
+						Worked closely with{" "}
+						<b className="font-semibold">cross-functional teams</b> — including
+						Product, Design, QA, and other Engineers — to deliver high quality
+						and user-centric features in <b className="font-semibold">Agile</b>{" "}
+						development environment.
 					</p>
 				</li>
 				<li className="flex gap-2 pl-0 text-pink-400 cursor-auto">
@@ -46,9 +53,10 @@ const PraktisExperience = () => {
 						<BsCaretRight />
 					</span>
 					<p className="-mt-1.5 text-slate-300  font-light leading-6">
-						Integrated REST APIs and tRPC for handling dynamic business logic,
-						data visualization, and workflow execution with robust states and
-						error management.
+						Integrated <b className="font-semibold">REST APIs</b> and{" "}
+						<b className="font-semibold">tRPC</b> for handling dynamic business
+						logic, data visualization, and workflow execution with robust states
+						and error management.
 					</p>
 				</li>
 				<li className="flex gap-2 pl-0 text-pink-400 cursor-auto">
