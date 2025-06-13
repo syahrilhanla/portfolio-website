@@ -1,4 +1,5 @@
 import Image from "next/image";
+import useInView from "./useInView";
 
 const skillsData = [
 	{
@@ -44,10 +45,14 @@ const skillsData = [
 ];
 
 const Skills = () => {
+	const [ref, inView] = useInView();
 	return (
-		<div
+		<section
+			ref={ref}
+			className={`min-h-screen flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem] py-12 relative transition-all duration-700 ease-out ${
+				inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+			}`}
 			name="skills"
-			className="min-h-screen text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-3 pb-7"
 		>
 			<div className="flex flex-col w-full max-w-5xl">
 				<div className="flex items-center gap-3 mb-8">
@@ -89,7 +94,7 @@ const Skills = () => {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

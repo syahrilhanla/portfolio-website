@@ -1,10 +1,14 @@
 import { HiDownload } from "react-icons/hi";
+import useInView from "./useInView";
 
 const About = () => {
+	const [ref, inView] = useInView();
 	return (
 		<div
-			className="min-h-screen text-slate-300 border-none
-			  md:px-10 px-3 md:pb-0 pb-12 flex flex-col justify-center items-center"
+			ref={ref}
+			className={`min-h-screen text-slate-300 border-none md:px-10 px-3 md:pb-0 pb-12 flex flex-col justify-center items-center transition-all duration-700 ease-out ${
+				inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+			}`}
 			name="about"
 		>
 			<div className="md:grid grid-cols-2 gap-x-8 w-[80%] mt-10 md:mt-0">

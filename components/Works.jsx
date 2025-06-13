@@ -1,11 +1,16 @@
 import workData from "./workData";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
+import useInView from "./useInView";
 
 const Works = () => {
+	const [ref, inView] = useInView();
 	return (
 		<section
+			ref={ref}
+			className={`min-h-screen text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem] pb-7 transition-all duration-700 ease-out ${
+				inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+			}`}
 			name="works"
-			className="min-h-screen text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem] pb-7"
 		>
 			<div className="flex flex-col sm:mt-3 mt-[6rem] w-full max-w-5xl">
 				<div className="flex items-center gap-3 mb-8">
