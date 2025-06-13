@@ -7,10 +7,9 @@ const Navbar = () => {
 	const [navbar, setNavbar] = useState(false);
 	const [showNavbar, setShowNavbar] = useState(true);
 	const [isAtTop, setIsAtTop] = useState(true);
-
-	// Track the last scroll position to determine scroll direction
-	// This is used to hide the navbar when scrolling down and show it when scrolling up
+	const [hasBeenInView, setHasBeenInView] = useState(false);
 	const lastScrollY = useRef(0);
+	const navRef = useRef();
 
 	// Effect to handle scroll events and update the navbar visibility
 	useEffect(() => {
@@ -29,9 +28,29 @@ const Navbar = () => {
 		window.addEventListener("scroll", handleScroll);
 
 		return () => {
+			// Cleanup the event listener on component unmount
 			window.removeEventListener("scroll", handleScroll);
 		};
 	}, []);
+
+	useEffect(() => {
+		const observer = new window.IntersectionObserver(
+			([entry]) => {
+				if (entry.isIntersecting) setHasBeenInView(true);
+			},
+			{ threshold: 0.1 }
+		);
+		if (navRef.current) observer.observe(navRef.current);
+		return () => observer.disconnect();
+	}, []);
+
+	useEffect(() => {
+		if (navbar) {
+			document.body.style.overflow = "hidden";
+		} else {
+			document.body.style.overflow = "";
+		}
+	}, [navbar]);
 
 	const setMobileNavbar = () => {
 		if (!navbar) {
@@ -42,15 +61,15 @@ const Navbar = () => {
 
 	return (
 		<div
-			className={`fixed h-[78px] w-full flex justify-between items-center px-4 bg-opacity-95 shadow-lg text-gray-300 z-30 ${
-				showNavbar ? "translate-y-0" : "-translate-y-full"
-			} transition-transform duration-300 ${
-				isAtTop
-					? "shadow-none translate-y-2 bg-inherit"
-					: "shadow-lg bg-[#0e1629]"
-			}`}
+			ref={navRef}
+			className={`fixed h-[78px] w-full flex justify-between items-center px-2 bg-opacity-95 shadow-lg text-gray-300 z-30
+		${showNavbar ? "translate-y-0" : "-translate-y-full"}
+		transition-transform duration-300
+		${isAtTop ? "shadow-none translate-y-2 bg-inherit" : "shadow-lg bg-[#0e1629]"}
+		transition-all duration-1000 ease-out
+		${hasBeenInView ? "opacity-100 translate-x-0" : "opacity-0 translate-x-16"}`}
 		>
-			<div className="ml-4">
+			<div className="ml-1">
 				<Image
 					src={"/syahrilLogo.png"}
 					quality={75}
@@ -63,33 +82,33 @@ const Navbar = () => {
 			{/* Menu */}
 			<ul className="hidden md:flex">
 				<li>
-					<Link to="home" smooth={true} duration={500}>
-						Home
+					<Link to="about" smooth={true} duration={500} className="text-sm">
+						<span className="text-pink-400 font-mono">01. </span>About
 					</Link>
 				</li>
 				<li>
-					<Link to="about" smooth={true} duration={500}>
-						About
+					<Link
+						to="experience"
+						smooth={true}
+						duration={500}
+						className="text-sm"
+					>
+						<span className="text-pink-400 font-mono">02. </span>Experience
 					</Link>
 				</li>
 				<li>
-					<Link to="experience" smooth={true} duration={500}>
-						Experience
+					<Link to="skills" smooth={true} duration={500} className="text-sm">
+						<span className="text-pink-400 font-mono">03. </span>Skills
 					</Link>
 				</li>
 				<li>
-					<Link to="skills" smooth={true} duration={500}>
-						Skills
+					<Link to="works" smooth={true} duration={500} className="text-sm">
+						<span className="text-pink-400 font-mono">04. </span>Projects
 					</Link>
 				</li>
 				<li>
-					<Link to="works" smooth={true} duration={500}>
-						Projects
-					</Link>
-				</li>
-				<li>
-					<Link to="contact" smooth={true} duration={500}>
-						Contact
+					<Link to="contact" smooth={true} duration={500} className="text-sm">
+						<span className="text-pink-400 font-mono">05. </span>Contact
 					</Link>
 				</li>
 			</ul>
@@ -109,22 +128,22 @@ const Navbar = () => {
 			<ul className={setMobileNavbar()}>
 				<li className="pb-3 text-3xl">
 					<Link
-						to="home"
-						smooth={true}
-						duration={500}
-						onClick={() => setNavbar((prevValue) => !prevValue)}
-					>
-						Home
-					</Link>
-				</li>
-				<li className="pb-3 text-3xl">
-					<Link
 						onClick={() => setNavbar((prevValue) => !prevValue)}
 						to="about"
 						smooth={true}
 						duration={500}
 					>
 						About
+					</Link>
+				</li>
+				<li className="pb-3 text-3xl">
+					<Link
+						to="experience"
+						smooth={true}
+						duration={500}
+						onClick={() => setNavbar((prevValue) => !prevValue)}
+					>
+						Experience
 					</Link>
 				</li>
 				<li className="pb-3 text-3xl">
