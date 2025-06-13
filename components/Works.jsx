@@ -32,7 +32,7 @@ const Works = () => {
 									className="absolute inset-0 bg-cover bg-center opacity-80 group-hover:opacity-100 transition duration-300"
 									style={{ backgroundImage: `url(${data.imgURL})` }}
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-[#181f33]/90 via-[#181f33]/60 to-transparent" />
+								<div className="absolute inset-0 bg-gradient-to-t from-pink-700/30 via-pink-300/10 to-transparent" />
 							</div>
 							{/* Content section - floating card */}
 							<div className="md:w-8/12 w-full flex flex-col justify-center md:items-end items-center md:pl-0 md:pr-8 mt-6 md:mt-0 relative z-10">
@@ -46,9 +46,15 @@ const Works = () => {
 									<span className="text-pink-400 text-sm font-mono mb-2 md:mb-0 md:self-end">
 										Featured Project
 									</span>
-									<h2 className="text-2xl md:text-3xl font-bold text-slate-100 mb-4 md:mb-2">
-										{data.title}
-									</h2>
+									<h3 className="text-2xl md:text-3xl font-bold text-slate-100 mb-4 md:mb-2 hover:text-pink-300 transition-colors">
+										<a
+											href={data.projectAddress}
+											target="_blank"
+											rel="noopener noreferrer"
+										>
+											{data.title}
+										</a>
+									</h3>
 									<div className="bg-[#181f33] rounded-md p-4 mb-4 shadow text-slate-200 text-sm font-light w-full md:w-auto">
 										{data.description}
 									</div>
