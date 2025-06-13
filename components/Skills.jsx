@@ -56,7 +56,7 @@ const Skills = () => {
 		>
 			<div className="flex flex-col w-full max-w-5xl">
 				<div className="flex items-center gap-3 mb-8">
-					<span className="text-pink-400 text-2xl font-mono">04.</span>
+					<span className="text-pink-400 text-2xl font-mono">03.</span>
 					<h1 className="text-3xl md:text-4xl font-semibold text-slate-100 tracking-tight">
 						Skills
 					</h1>

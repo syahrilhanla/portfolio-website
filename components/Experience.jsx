@@ -26,7 +26,7 @@ const Experience = () => {
 		>
 			<div className="space-y-8 lg:max-w-3xl max-w-4xl mt-10 md:mt-0 max-h-96">
 				<div className="flex items-center gap-3 mb-8">
-					<span className="text-pink-400 text-2xl font-mono">03.</span>
+					<span className="text-pink-400 text-2xl font-mono">02.</span>
 					<h1 className="text-3xl md:text-4xl font-semibold text-slate-100 tracking-tight">
 						Experience
 					</h1>

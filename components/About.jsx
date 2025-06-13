@@ -14,7 +14,7 @@ const About = () => {
 			<div className="md:grid grid-cols-2 gap-x-8 w-[80%] mt-10 md:mt-0">
 				<span className="md:flex justify-end">
 					<div className="flex items-center gap-3 mb-8">
-						<span className="text-pink-400 text-2xl font-mono">02.</span>
+						<span className="text-pink-400 text-2xl font-mono">01.</span>
 						<h1 className="text-3xl md:text-4xl font-semibold text-slate-100 tracking-tight">
 							About Me
 						</h1>

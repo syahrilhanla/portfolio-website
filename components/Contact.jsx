@@ -28,7 +28,7 @@ const Contact = () => {
 			}`}
 		>
 			<div className="flex items-center gap-3 mb-8 w-full max-w-3xl mx-auto">
-				<span className="text-pink-400 text-2xl font-mono">06.</span>
+				<span className="text-pink-400 text-2xl font-mono">05.</span>
 				<h2 className="text-3xl md:text-4xl font-bold text-slate-100 tracking-tight text-left">
 					Contact
 				</h2>

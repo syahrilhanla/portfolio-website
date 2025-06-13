@@ -14,7 +14,7 @@ const Works = () => {
 		>
 			<div className="flex flex-col sm:mt-3 mt-[6rem] w-full max-w-5xl">
 				<div className="flex items-center gap-3 mb-8">
-					<span className="text-pink-400 text-2xl font-mono">05.</span>
+					<span className="text-pink-400 text-2xl font-mono">04.</span>
 					<h1 className="text-3xl md:text-4xl font-semibold text-slate-100 tracking-tight">
 						Projects
 					</h1>
