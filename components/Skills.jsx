@@ -19,7 +19,7 @@ const skillsData = [
 			{ name: "Node.js", icon: "/nodeJS.svg" },
 			{ name: "Django", icon: "/django.svg" },
 			{ name: "Laravel", icon: "/laravel.svg" },
-			{ name: "Firebase", icon: "/firebase.png" },
+			{ name: "Firebase", icon: "/firebase.svg" },
 		],
 	},
 	{
@@ -28,6 +28,7 @@ const skillsData = [
 			{ name: "MongoDB", icon: "/mongo.png" },
 			{ name: "MySQL", icon: "/mysql.svg" },
 			{ name: "PostgreSQL", icon: "/postgresql.svg" },
+			{ name: "Cloud Firestore", icon: "/firestore.svg" },
 		],
 	},
 	{
