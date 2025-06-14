@@ -3,10 +3,12 @@ import PraktisExperience from "./PraktisExperience";
 import BirranExperience from "./BirranExperience";
 import StartupBorneoExperience from "./StartupBorneoExperience";
 import ExperienceTabs from "./ExperienceTabs";
+import useInView from "./useInView";
 
 const Experience = () => {
 	const [activeTab, setActiveTab] = useState("praktis");
 	const [tabKey, setTabKey] = useState(0);
+	const [ref, inView] = useInView();
 
 	const handleTabChange = (tab) => {
 		setActiveTab(tab);
@@ -15,13 +17,16 @@ const Experience = () => {
 
 	return (
 		<div
-			className="min-h-screen text-slate-300 border-none overflow-visible
-      md:px-10 px-3 md:pb-0 pb-12 flex flex-col justify-center items-center"
+			ref={ref}
+			className={`min-h-screen text-slate-300 border-none overflow-visible
+      md:px-10 px-3 md:pb-0 pb-12 flex flex-col justify-center items-center transition-all duration-700 ease-out ${
+				inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+			}`}
 			name="experience"
 		>
 			<div className="space-y-8 lg:max-w-3xl max-w-4xl mt-10 md:mt-0 max-h-96">
 				<div className="flex items-center gap-3 mb-8">
-					<span className="text-pink-400 text-2xl font-mono">03.</span>
+					<span className="text-pink-400 text-2xl font-mono">02.</span>
 					<h1 className="text-3xl md:text-4xl font-semibold text-slate-100 tracking-tight">
 						Experience
 					</h1>

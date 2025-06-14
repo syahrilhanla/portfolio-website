@@ -1,4 +1,5 @@
 import Image from "next/image";
+import useInView from "./useInView";
 
 const skillsData = [
 	{
@@ -18,7 +19,7 @@ const skillsData = [
 			{ name: "Node.js", icon: "/nodeJS.svg" },
 			{ name: "Django", icon: "/django.svg" },
 			{ name: "Laravel", icon: "/laravel.svg" },
-			{ name: "Firebase", icon: "/firebase.png" },
+			{ name: "Firebase", icon: "/firebase.svg" },
 		],
 	},
 	{
@@ -27,6 +28,7 @@ const skillsData = [
 			{ name: "MongoDB", icon: "/mongo.png" },
 			{ name: "MySQL", icon: "/mysql.svg" },
 			{ name: "PostgreSQL", icon: "/postgresql.svg" },
+			{ name: "Cloud Firestore", icon: "/firestore.svg" },
 		],
 	},
 	{
@@ -44,14 +46,18 @@ const skillsData = [
 ];
 
 const Skills = () => {
+	const [ref, inView] = useInView();
 	return (
-		<div
+		<section
+			ref={ref}
+			className={`min-h-screen flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem] py-12 relative transition-all duration-700 ease-out ${
+				inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+			}`}
 			name="skills"
-			className="min-h-screen text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-3 pb-7"
 		>
 			<div className="flex flex-col w-full max-w-5xl">
 				<div className="flex items-center gap-3 mb-8">
-					<span className="text-pink-400 text-2xl font-mono">04.</span>
+					<span className="text-pink-400 text-2xl font-mono">03.</span>
 					<h1 className="text-3xl md:text-4xl font-semibold text-slate-100 tracking-tight">
 						Skills
 					</h1>
@@ -89,7 +95,7 @@ const Skills = () => {
 					))}
 				</div>
 			</div>
-		</div>
+		</section>
 	);
 };
 

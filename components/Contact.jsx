@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { FiMail } from "react-icons/fi";
+import useInView from "./useInView";
 
 const Contact = () => {
 	const [name, setName] = useState("");
 	const [email, setEmail] = useState("");
 	const [message, setMessage] = useState("");
+	const [ref, inView] = useInView();
 
 	const disableSubmit = () => {
 		// Name: at least 3 non-whitespace chars
@@ -19,11 +21,14 @@ const Contact = () => {
 
 	return (
 		<section
+			ref={ref}
 			name="contact"
-			className="min-h-screen flex flex-col justify-center items-center text-center bg-inherit md:px-[8rem] px-[2rem] py-12 relative"
+			className={`min-h-screen flex flex-col justify-center items-center text-center bg-inherit md:px-[8rem] px-[2rem] py-12 relative transition-all duration-300 ease-out ${
+				inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
+			}`}
 		>
 			<div className="flex items-center gap-3 mb-8 w-full max-w-3xl mx-auto">
-				<span className="text-pink-400 text-2xl font-mono">06.</span>
+				<span className="text-pink-400 text-2xl font-mono">05.</span>
 				<h2 className="text-3xl md:text-4xl font-bold text-slate-100 tracking-tight text-left">
 					Contact
 				</h2>
