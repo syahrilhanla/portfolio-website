@@ -82,8 +82,9 @@ const Contact = () => {
 						></textarea>
 						<button
 							type="submit"
-							className="w-full mt-2 text-white bg-pink-500 hover:bg-pink-600 rounded-full py-3 transition duration-200 shadow-md
-							disabled:bg-pink-300 disabled:opacity-50 disabled:cursor-not-allowed"
+							className="w-full mt-2 text-white bg-pink-500 hover:bg-pink-600 rounded-full 
+								py-2 transition duration-200 shadow-md text-sm font-semibold
+								disabled:bg-pink-300 disabled:opacity-50 disabled:cursor-not-allowed"
 							disabled={disableSubmit()}
 						>
 							Send Message

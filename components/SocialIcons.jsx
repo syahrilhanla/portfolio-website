@@ -1,18 +1,37 @@
+import Link from "next/link";
+import { useState, useEffect } from "react";
+import { Link as Scroll } from "react-scroll";
+
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { BsPersonLinesFill } from "react-icons/bs";
-import Link from "next/link";
-import { Link as Scroll, animateScroll } from "react-scroll";
 
-const SocialIcons = ({ navbar }) => {
-	const scroll = animateScroll;
+const SocialIcons = () => {
+	const [isAtBottom, setIsAtBottom] = useState(false);
+
+	// Function to check if the user is at the bottom of the page
+	const checkBottom = () => {
+		const scrollPosition = window.scrollY + window.innerHeight;
+		const documentHeight = document.documentElement.scrollHeight;
+		return scrollPosition >= documentHeight - 50; // Adjust threshold as needed
+	};
+
+	useEffect(() => {
+		const handleScroll = () => {
+			// console.log(checkBottom());
+			setIsAtBottom(checkBottom());
+		};
+
+		window.addEventListener("scroll", handleScroll);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 
 	return (
 		<div
-			className={
-				navbar
-					? "hidden"
-					: `hidden md:flex fixed flex-col top-1/2 left-2 -translate-y-1/2 z-40`
-			}
+			className={`${
+				isAtBottom ? "opacity-0" : "opacity-100"
+			} md:flex fixed flex-col top-1/2 left-2 -translate-y-1/2 z-40 transition-opacity duration-300`}
 		>
 			<ul>
 				<li className="h-[60px] w-[150px] flex justify-between items-center ml-[-6rem] hover:ml-[-5px] duration-300">
