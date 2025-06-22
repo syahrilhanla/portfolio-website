@@ -1,22 +1,17 @@
 import workData from "./workData";
 import { FiExternalLink, FiGithub } from "react-icons/fi";
-import useInView from "./useInView";
 
 const Works = () => {
-	const [ref, inView] = useInView();
 	return (
 		<section
-			ref={ref}
-			className={`min-h-screen text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem] pb-7 transition-all duration-700 ease-out ${
-				inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-			}`}
+			className={`text-gray-300 flex flex-col justify-center items-center text-center md:px-[8rem] px-[2rem] pb-7 transition-all duration-700 ease-out`}
 			name="works"
 		>
 			<div className="flex flex-col sm:mt-3 mt-[6rem] w-full max-w-5xl">
 				<div className="flex items-center gap-3 mb-8">
 					<span className="text-pink-400 text-2xl font-mono">04.</span>
 					<h1 className="text-3xl md:text-4xl font-semibold text-slate-100 tracking-tight">
-						Projects
+						Featured Projects
 					</h1>
 					<div className="flex-1 border-b border-slate-700 ml-4" />
 				</div>
@@ -27,12 +22,12 @@ const Works = () => {
 							className="relative flex flex-col md:flex-row items-center md:items-stretch bg-transparent group"
 						>
 							{/* Image section */}
-							<div className="md:w-7/12 w-full h-64 md:h-[340px] rounded-lg overflow-hidden shadow-lg border border-slate-800 bg-[#181f33] relative group-hover:scale-[1.03] group-hover:shadow-pink-500/30 transition-all duration-300">
+							<div className="md:w-7/12 w-full h-64 md:h-[340px] rounded-lg overflow-hidden shadow-lg border border-slate-800 bg-[#181f33] relative group-hover:scale-105 group-hover:shadow-pink-500/20 transition-all duration-300">
 								<div
 									className="absolute inset-0 bg-cover bg-center opacity-80 group-hover:opacity-100 transition duration-300"
 									style={{ backgroundImage: `url(${data.imgURL})` }}
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-pink-700/30 via-pink-300/10 to-transparent" />
+								<div className="absolute inset-0 bg-gradient-to-t from-pink-600/20 via-pink-300/10 to-transparent" />
 							</div>
 							{/* Content section - floating card */}
 							<div className="md:w-8/12 w-full flex flex-col justify-center md:items-end items-center md:pl-0 md:pr-8 mt-6 md:mt-0 relative z-10">
@@ -46,7 +41,7 @@ const Works = () => {
 									<span className="text-pink-400 text-sm font-mono mb-2 md:mb-0 md:self-end">
 										Featured Project
 									</span>
-									<h3 className="text-2xl md:text-3xl font-bold text-slate-100 mb-4 md:mb-2 hover:text-pink-300 transition-colors">
+									<h3 className="text-2xl md:text-3xl font-bold text-slate-100 mb-4 md:mb-2 hover:text-pink-300 duration-200 transition-colors">
 										<a
 											href={data.projectAddress}
 											target="_blank"
