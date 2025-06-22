@@ -163,7 +163,7 @@ const Navbar = () => {
 						duration={500}
 						onClick={() => setNavbar((prevValue) => !prevValue)}
 					>
-						Works
+						Projects
 					</Link>
 				</li>
 				<li className="pb-3 text-3xl">
