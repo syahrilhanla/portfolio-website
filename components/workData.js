@@ -13,6 +13,10 @@ const workData = [
 			},
 			{
 				img: "/tailwind.png",
+				name: "Tanstack Query",
+			},
+			{
+				img: "/tailwind.png",
 				name: "TailwindCSS",
 			},
 			{
@@ -24,12 +28,12 @@ const workData = [
 				name: "Django REST Framework",
 			},
 			{
-				img: "/xendit.svg",
-				name: "Xendit",
-			},
-			{
 				img: "/postgresql.svg",
 				name: "PostgreSQL",
+			},
+			{
+				img: "/xendit.svg",
+				name: "Xendit",
 			},
 		],
 	},
@@ -46,12 +50,24 @@ const workData = [
 				name: "Next.js",
 			},
 			{
+				img: "/nextJS.svg",
+				name: "Fastify",
+			},
+			{
+				img: "/nextJS.svg",
+				name: "Consumet.ts",
+			},
+			{
 				img: "/redux.svg",
 				name: "Redux",
 			},
 			{
 				img: "/tailwind.png",
 				name: "TailwindCSS",
+			},
+			{
+				img: "/swiper.svg",
+				name: "Swiper",
 			},
 		],
 	},

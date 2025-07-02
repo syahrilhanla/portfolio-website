@@ -1,6 +1,7 @@
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Link } from "react-scroll";
 import { useEffect, useState } from "react";
+import { AuroraText } from "./magicui/aurora-text";
 
 const Introduction = () => {
 	const [show, setShow] = useState(false);
@@ -22,7 +23,7 @@ const Introduction = () => {
 				Syahril Hanla
 			</h1>
 			<h1 className="text-slate-500 text-5xl font-bold mb-3">
-				Software Engineer.
+				<AuroraText>Software Engineer.</AuroraText>
 			</h1>
 			<p className="text-slate-300 md:text-base max-w-lg text-base flex-wrap font-light">
 				I'm a software engineer with 3+ years of experience specializing in
@@ -32,8 +33,8 @@ const Introduction = () => {
 
 			<Link to="works" smooth={true} duration={500}>
 				<button
-					className="flex flex-row justify-between items-center px-5 py-2 border border-slate-200 rounded-md text-slate-200 
-					w-[9rem] mt-4 font-light hover:bg-slate-400 hover:scale-x-105  hover:text-slate-900/80 hover:border-bg-slate-700 duration-300 group"
+					className="flex flex-row text-sm justify-between items-center px-5 py-2 border border-slate-200 rounded-md text-slate-200 
+					w-[9rem] mt-4 hover:bg-slate-200 hover:scale-105  hover:text-slate-900/80 hover:border-bg-slate-700 duration-300 group"
 				>
 					View Works
 					<span className="group-hover:rotate-90 duration-300 text-pink-500">
