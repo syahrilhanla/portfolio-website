@@ -7,7 +7,13 @@
 @layer base {
 	li {
 		@apply px-4;
-		@apply cursor-pointer;
+		/* @apply cursor-pointer; */
+	}
+	button {
+		@apply cursor-none;
+	}
+	a {
+		@apply cursor-none;
 	}
   :root {
 		--background: 0 0% 100%;
@@ -115,6 +121,9 @@
 	}
   body {
     @apply bg-background text-foreground;
+	}
+	p {
+		@apply cursor-none;
 	}
 }
 

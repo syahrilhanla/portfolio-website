@@ -74,7 +74,7 @@ const ExperienceTabs = ({ activeTab, setActiveTab }) => {
 						key={tab.key}
 						onClick={() => setActiveTab(tab.key)}
 						ref={(el) => (tabRefs.current[i] = el)}
-						className={`relative px-4 py-2 text-sm md:text-base cursor-pointer transition-colors duration-300 whitespace-nowrap
+						className={`relative px-4 py-2 text-sm md:text-base transition-colors duration-300 whitespace-nowrap
 						${
 							activeTab === tab.key
 								? "text-pink-400 font-semibold bg-slate-800"
