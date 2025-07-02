@@ -8,6 +8,7 @@ import Skills from "../components/Skills";
 import Works from "../components/Works";
 import SocialIcons from "../components/SocialIcons";
 import Experience from "../components/Experience";
+import { Pointer } from "../components/magicui/pointer";
 
 export default function Startup() {
 	return (
@@ -30,6 +31,8 @@ export default function Startup() {
 
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
+
+			<Pointer className="fill-pink-600/80" />
 
 			<SocialIcons />
 			<Navbar />
