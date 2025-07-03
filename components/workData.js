@@ -102,6 +102,44 @@ const workData = [
 		],
 	},
 	{
+		imgURL: "blog-genzet.png",
+		title: "Blog Genzet",
+		repoAddress: "https://github.com/syahrilhanla/seller-pintar-frontend",
+		projectAddress: "https://blog-genzet-syahril.vercel.app/",
+		description:
+			"Blog Genzet is a modern blogging platform with a built-in CMS, supporting both admin and user authentication/authorization. It allows users to create, edit, and manage blog posts with a rich text editor. It provides a seamless blogging experience.",
+		techStack: [
+			{
+				img: "/nextJS.svg",
+				name: "Next.js",
+			},
+			{
+				img: "/mui.svg",
+				name: "Shadcn/ui",
+			},
+			{
+				img: "/firebase.png",
+				name: "Axios",
+			},
+			{
+				img: "/firestore.png",
+				name: "React Hook Form",
+			},
+			{
+				img: "/firestore.png",
+				name: "Zod",
+			},
+			{
+				img: "/firestore.png",
+				name: "TipTap Rich Text Editor",
+			},
+			{
+				img: "/firestore.png",
+				name: "use-hooks-ts",
+			},
+		],
+	},
+	{
 		imgURL: "nike-clone.png",
 		title: "Nike E-Commerce Clone ",
 		repoAddress: "https://github.com/syahrilhanla/nike-clone",
