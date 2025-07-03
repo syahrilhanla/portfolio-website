@@ -56,10 +56,10 @@ const Works = () => {
 									<div className="flex flex-wrap gap-3 mb-4 md:justify-end">
 										{data.techStack?.map((tech) => (
 											<span
-												key={tech.name || tech}
-												className="text-xs font-mono tracking-wide text-slate-300 bg-slate-800 px-3 py-1 rounded-md border border-slate-700"
+												key={tech.name}
+												className="text-xs font-mono tracking-wide text-slate-300 bg-slate-800 px-3 py-1 rounded-full border border-slate-700"
 											>
-												{tech.name || tech}
+												{tech.name}
 											</span>
 										))}
 									</div>
