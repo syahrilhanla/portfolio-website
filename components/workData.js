@@ -5,7 +5,7 @@ const workData = [
 		repoAddress: "https://github.com/syahrilhanla/fullstack-commerce",
 		projectAddress: "https://fullstack-commerce.vercel.app/",
 		description:
-			"Fullstack Commerce is a modern e-commerce platform featuring authentication, shopping cart, checkout, payment, and invoicing. Built with Next.js, TailwindCSS, HeroUI, Django REST Framework, Xendit, and PostgreSQL, it delivers a seamless shopping experience with a robust backend.",
+			"Fullstack Commerce is a modern e-commerce platform featuring authentication, shopping cart, checkout, payment, and invoicing. Built with Next.js, TailwindCSS, Zustand, HeroUI, Django REST Framework, Xendit, and PostgreSQL, it delivers a seamless shopping experience with a robust backend.",
 		techStack: [
 			{
 				img: "/nextJS.svg",
@@ -18,6 +18,10 @@ const workData = [
 			{
 				img: "/tailwind.png",
 				name: "TailwindCSS",
+			},
+			{
+				img: "/heroui.svg",
+				name: "Zustand",
 			},
 			{
 				img: "/heroui.svg",
@@ -47,7 +51,7 @@ const workData = [
 		techStack: [
 			{
 				img: "/nextJS.svg",
-				name: "Next.js",
+				name: "React",
 			},
 			{
 				img: "/nextJS.svg",
