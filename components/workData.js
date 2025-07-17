@@ -3,7 +3,7 @@ const workData = [
 		imgURL: "/fullstack-commerce.png",
 		title: "Fullstack Commerce",
 		repoAddress: "https://github.com/syahrilhanla/fullstack-commerce",
-		projectAddress: "https://fullstack-commerce.vercel.app/",
+		projectAddress: "https://fullstack-commerce.syahrilhanla.com",
 		description:
 			"Fullstack Commerce is a modern e-commerce platform featuring authentication, shopping cart, checkout, payment, and invoicing. Built with Next.js, TailwindCSS, Zustand, HeroUI, Django REST Framework, Xendit, and PostgreSQL, it delivers a seamless shopping experience with a robust backend.",
 		techStack: [
@@ -45,7 +45,7 @@ const workData = [
 		imgURL: "cyberani.png",
 		title: "CyberAni",
 		// repoAddress: "https://github.com/syahrilhanla/cyberani",
-		projectAddress: "https://cyberani.vercel.app/",
+		projectAddress: "https://vite-cyberani-dev.netlify.app/",
 		description:
 			"CyberAni is a free anime streaming platform built with React, Next.js, and TailwindCSS. This project is intended for learning purposes and demonstrates modern web streaming features.",
 		techStack: [
@@ -79,7 +79,7 @@ const workData = [
 		imgURL: "ia-statistics.png",
 		title: "I/A Statistics",
 		repoAddress: "https://github.com/syahrilhanla/proyek-skripsi",
-		projectAddress: "https://ia-statistics.vercel.app/",
+		projectAddress: "https://ia-statistics.syahrilhanla.com/",
 		description:
 			"A research-based learning platform developed for a university, designed to track student progress and support interactive learning. Features include user authentication and activity detection. Built with Next.js, Material-UI, Firebase, and Firestore. The project was patented and presented in a national seminar by the university faculty.",
 		techStack: [
@@ -105,7 +105,7 @@ const workData = [
 		imgURL: "blog-genzet.png",
 		title: "Blog Genzet",
 		repoAddress: "https://github.com/syahrilhanla/seller-pintar-frontend",
-		projectAddress: "https://blog-genzet-syahril.vercel.app/",
+		projectAddress: "https://blog-genzet.syahrilhanla.com/",
 		description:
 			"Blog Genzet is a modern blogging platform with a built-in CMS, supporting both admin and user authentication/authorization. It allows users to create, edit, and manage blog posts with a rich text editor. It provides a seamless blogging experience.",
 		techStack: [
@@ -143,7 +143,7 @@ const workData = [
 		imgURL: "nike-clone.png",
 		title: "Nike E-Commerce Clone ",
 		repoAddress: "https://github.com/syahrilhanla/nike-clone",
-		projectAddress: "https://nike-syahril.vercel.app/",
+		projectAddress: "https://nike.syahrilhanla.com/",
 		description:
 			"A Nike.com e-commerce clone replicating core functionality. Built with Next.js, Redux, and TailwindCSS. Currently under development.",
 		techStack: [
