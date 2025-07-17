@@ -31,7 +31,7 @@ const SocialIcons = () => {
 		<div
 			className={`${
 				isAtBottom ? "opacity-0" : "opacity-100"
-			} md:flex fixed flex-col top-1/2 left-2 -translate-y-1/2 z-40 transition-opacity duration-300`}
+			} hidden md:flex fixed flex-col top-1/2 left-2 -translate-y-1/2 z-40 transition-opacity duration-300`}
 		>
 			<ul>
 				<li className="h-[60px] w-[150px] flex justify-between items-center ml-[-6rem] hover:ml-[-5px] duration-300">
