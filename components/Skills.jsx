@@ -9,7 +9,10 @@ const skillsData = [
 			{ name: "TypeScript", icon: "/typescript.svg" },
 			{ name: "React", icon: "/react.png" },
 			{ name: "Next.js", icon: "/nextJS.svg" },
+			{ name: "Vite", icon: "/vite.svg" },
+			{ name: "React Router", icon: "/react-router.png" },
 			{ name: "Vue.js", icon: "/Vue.js.svg" },
+			{ name: "Nuxt.js", icon: "/nuxt.png" },
 			{ name: "Tailwind CSS", icon: "/tailwind.png" },
 		],
 	},
@@ -17,6 +20,8 @@ const skillsData = [
 		category: "Backend",
 		items: [
 			{ name: "Node.js", icon: "/nodeJS.svg" },
+			{ name: "Express.js", icon: "/express-white.webp" },
+			{ name: "Fastify", icon: "/fastify.svg" },
 			{ name: "Django", icon: "/django.svg" },
 			{ name: "Laravel", icon: "/laravel.svg" },
 			{ name: "Firebase", icon: "/firebase.svg" },
@@ -83,7 +88,7 @@ const Skills = () => {
 											width={48}
 											height={48}
 											alt={item.name}
-											className="mb-2"
+											className="mb-2 object-contain fill-white text-slate-200 text-sm"
 										/>
 										<span className="absolute bottom-2 left-1/2 -translate-x-1/2 translate-y-full bg-slate-900 text-xs text-slate-100 px-2 py-1 rounded opacity-0 group-hover:opacity-100 pointer-events-none transition-opacity duration-200 whitespace-nowrap z-50 shadow-lg border border-pink-300">
 											{item.name}
