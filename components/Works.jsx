@@ -27,8 +27,9 @@ const Works = () => {
 									className="absolute inset-0 bg-cover bg-center opacity-80 group-hover:opacity-100 transition duration-300"
 									style={{ backgroundImage: `url(${data.imgURL})` }}
 								/>
-								<div className="absolute inset-0 bg-gradient-to-t from-pink-600/20 via-pink-300/10 to-transparent" />
+								<div className="absolute inset-0 bg-gradient-to-t from-pink-600/5 via-pink-300/5 to-transparent hover:from-transparent" />
 							</div>
+
 							{/* Content section - floating card */}
 							<div className="md:w-8/12 w-full flex flex-col justify-center md:items-end items-center md:pl-0 md:pr-8 mt-6 md:mt-0 relative z-10">
 								<div

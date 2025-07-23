@@ -5,72 +5,71 @@ const workData = [
 		repoAddress: "https://github.com/syahrilhanla/fullstack-commerce",
 		projectAddress: "https://fullstack-commerce.syahrilhanla.com",
 		description:
-			"Fullstack Commerce is a modern e-commerce platform featuring authentication, shopping cart, checkout, payment, and invoicing. Built with Next.js, TailwindCSS, Zustand, HeroUI, Django REST Framework, Xendit, and PostgreSQL, it delivers a seamless shopping experience with a robust backend.",
+			`Developed a full-stack e-commerce application with authentication, cart functionality, and Xendit
+			payment integration. Implemented clean API communication between Next.js and Django, using
+			Neon PostgreSQL for cloud database storage. Managed global state with Zustand and handled realtime payment status via webhook processing. Focused on clear UX with consistent styling through
+			HeroUI components`,
 		techStack: [
 			{
-				img: "/nextJS.svg",
 				name: "Next.js",
 			},
 			{
-				img: "/tailwind.png",
 				name: "Tanstack Query",
 			},
 			{
-				img: "/tailwind.png",
 				name: "TailwindCSS",
 			},
 			{
-				img: "/heroui.svg",
 				name: "Zustand",
 			},
 			{
-				img: "/heroui.svg",
 				name: "HeroUI",
 			},
 			{
-				img: "/django.svg",
 				name: "Django REST Framework",
 			},
 			{
-				img: "/postgresql.svg",
 				name: "PostgreSQL",
 			},
 			{
-				img: "/xendit.svg",
 				name: "Xendit",
 			},
 		],
 	},
 	{
-		imgURL: "cyberani.png",
+		imgURL: "cyberani-2.png",
 		title: "CyberAni",
-		// repoAddress: "https://github.com/syahrilhanla/cyberani",
-		projectAddress: "https://vite-cyberani-dev.netlify.app/",
+		repoAddress: "https://github.com/syahrilhanla/vite-cyberani",
+		projectAddress: "https://cyberani.syahrilhanla.com/",
 		description:
-			"CyberAni is a free anime streaming platform built with React, Next.js, and TailwindCSS. This project is intended for learning purposes and demonstrates modern web streaming features.",
+			`A fast, minimal, an ad-free anime streaming platform, built from scratch with performance and user
+			experience in mind. As an anime fan, I built this to solve a problem I have always faced — too many
+			anime platforms are either bloated, full of ads, or painfully slow. So I created my own for me and
+			my peers to use. Collaborated and mentored another contributor, guiding in frontend architecture
+			and structured project delivery.`,
 		techStack: [
 			{
-				img: "/nextJS.svg",
 				name: "React",
 			},
 			{
-				img: "/nextJS.svg",
+				name: "Vite",
+			},
+			{
+				name: "React Router V7",
+			},
+			{
 				name: "Fastify",
 			},
 			{
-				img: "/nextJS.svg",
 				name: "Consumet.ts",
 			},
 			{
-				img: "/redux.svg",
 				name: "Redux",
 			},
 			{
-				img: "/tailwind.png",
 				name: "TailwindCSS",
 			},
 			{
-				img: "/swiper.svg",
 				name: "Swiper",
 			},
 		],
@@ -84,19 +83,15 @@ const workData = [
 			"A research-based learning platform developed for a university, designed to track student progress and support interactive learning. Features include user authentication and activity detection. Built with Next.js, Material-UI, Firebase, and Firestore. The project was patented and presented in a national seminar by the university faculty.",
 		techStack: [
 			{
-				img: "/nextJS.svg",
 				name: "Next.js",
 			},
 			{
-				img: "/mui.svg",
 				name: "Material-UI",
 			},
 			{
-				img: "/firebase.png",
 				name: "Firebase",
 			},
 			{
-				img: "/firestore.png",
 				name: "Firestore",
 			},
 		],
@@ -110,31 +105,24 @@ const workData = [
 			"Blog Genzet is a modern blogging platform with a built-in CMS, supporting both admin and user authentication/authorization. It allows users to create, edit, and manage blog posts with a rich text editor. It provides a seamless blogging experience.",
 		techStack: [
 			{
-				img: "/nextJS.svg",
 				name: "Next.js",
 			},
 			{
-				img: "/mui.svg",
 				name: "Shadcn/ui",
 			},
 			{
-				img: "/firebase.png",
 				name: "Axios",
 			},
 			{
-				img: "/firestore.png",
 				name: "React Hook Form",
 			},
 			{
-				img: "/firestore.png",
 				name: "Zod",
 			},
 			{
-				img: "/firestore.png",
 				name: "TipTap Rich Text Editor",
 			},
 			{
-				img: "/firestore.png",
 				name: "use-hooks-ts",
 			},
 		],
@@ -148,15 +136,12 @@ const workData = [
 			"A Nike.com e-commerce clone replicating core functionality. Built with Next.js, Redux, and TailwindCSS. Currently under development.",
 		techStack: [
 			{
-				img: "/nextJS.svg",
 				name: "Next.js",
 			},
 			{
-				img: "/redux.svg",
 				name: "Redux",
 			},
 			{
-				img: "/tailwind.png",
 				name: "TailwindCSS",
 			},
 		],
@@ -170,19 +155,15 @@ const workData = [
 			"A point of sales application with shopping cart and transaction logic based on real-world scenarios. Built with Next.js, Flowbite, Node.js, and JSON Server.",
 		techStack: [
 			{
-				img: "/nextJS.svg",
 				name: "Next.js",
 			},
 			{
-				img: "/flowbite.svg",
 				name: "Flowbite",
 			},
 			{
-				img: "/nodeJS.svg",
 				name: "Node.js",
 			},
 			{
-				img: "/json-server.svg",
 				name: "JSON Server",
 			},
 		],
